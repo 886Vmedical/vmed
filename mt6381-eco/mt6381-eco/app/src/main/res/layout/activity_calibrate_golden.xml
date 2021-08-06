@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+  <View
+      android:id="@+id/view_calibrate_golden"
+      android:layout_width="0.1dp"
+      android:layout_height="0.1dp"
+      android:contentDescription="forUITesting"
+      />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:paddingLeft="@dimen/activity_horizontal_margin_2"
+      android:paddingRight="@dimen/activity_horizontal_margin_2"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_vertical"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/systolic_title"
+            style="@style/FormLabel"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            >
+          <EditText
+              android:id="@+id/edt_sbp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:digits="1234567890"
+              android:drawableStart="@drawable/icon_list_bp"
+              android:gravity="center_vertical|right"
+              android:imeOptions="actionNext"
+              android:inputType="number"
+              android:maxLength="3"
+              android:paddingEnd="@dimen/activity_horizontal_margin"
+              />
+        </android.support.design.widget.TextInputLayout>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/diastolic_title"
+            style="@style/FormLabel"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            >
+          <EditText
+              android:id="@+id/edt_dbp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:digits="1234567890"
+              android:drawableStart="@drawable/icon_list_bp"
+              android:gravity="center_vertical|right"
+              android:imeOptions="actionNext"
+              android:inputType="number"
+              android:maxLength="3"
+              android:paddingEnd="@dimen/activity_horizontal_margin"
+              />
+        </android.support.design.widget.TextInputLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/heart_rate_title"
+            style="@style/FormLabel"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            >
+          <EditText
+              android:id="@+id/txt_heart_rate"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:digits="1234567890"
+              android:drawableStart="@drawable/icon_list_hr"
+              android:gravity="center_vertical|right"
+              android:imeOptions="actionDone"
+              android:inputType="number"
+              android:maxLength="3"
+              android:paddingEnd="@dimen/activity_horizontal_margin"
+              />
+        </android.support.design.widget.TextInputLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout
+      android:id="@+id/action_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+      android:orientation="horizontal"
+      >
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/cancel"
+        style="@style/MButton"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="2"
+        android:enabled="false"
+        android:text="@string/next"
+        style="@style/MButton.Inverse"
+        />
+
+  </LinearLayout>
+
+
+</LinearLayout>
+

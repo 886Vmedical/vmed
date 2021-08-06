@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    >
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    <include layout="@layout/layout_ecg_ppg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:divider="@drawable/divider"
+        android:showDividers="middle|end"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_bp"
+            android:text="@string/blood_pressure_title"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_blood_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value_pair"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_hr"
+            android:text="@string/heart_rate_title"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_spo2"
+            android:text="@string/spo2_title"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_spo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_hrv"
+            android:text="@string/brv_title"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_brv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="--"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_temp"
+            android:text="@string/temp_title"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/temp_string_data"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_hrv"
+            android:text="@string/fatigue_index"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_fatigue_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value_pair"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_hrv"
+            android:text="@string/pressure_index"
+            style="@style/FormLabel"
+            />
+        <TextView
+            android:id="@+id/txt_pressure_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value_pair"
+            style="@style/FormValue"
+            />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+
+        <TextView
+            style="@style/FormLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_list_ecg_risk"
+            android:text="@string/heart_rate_risk" />
+
+        <TextView
+            android:id="@+id/txt_heart_rate_risk"
+            style="@style/FormValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_value" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+</ScrollView>

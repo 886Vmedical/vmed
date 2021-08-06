@@ -1,0 +1,79 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+  repositories {
+    maven { url "https://maven.google.com" }
+
+    jcenter()
+    google()
+//    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+//    maven { url "https://jitpack.io" }
+  }
+  dependencies {
+    //classpath 'com.android.tools.build:gradle:3.1.2'
+    classpath 'me.tatarka:gradle-retrolambda:3.6.1'
+    classpath 'com.android.tools.build:gradle:4.1.3'
+  }
+}
+
+allprojects {
+  repositories {
+    maven { url "https://maven.google.com" }
+    google()
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url 'https://dl.google.com/dl/android/maven2/' }
+//    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+//    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+//    maven {
+//      url "http://maven.aliyun.com/nexus/content/repositories/releases/"
+//    }
+//    maven {
+//      url "http://maven.aliyun.com/nexus/content/repositories/snapshots"
+//    }
+    jcenter()
+    jcenter { url "http://jcenter.bintray.com/" }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+ext {
+  minSdkVersion = 21
+  targetSdkVersion = 29
+  compileSdkVersion = 29
+  supportLibVersion = '27.0.2'
+//  supportLibVersion = '29.0.2'
+
+  rxJavaVersion = '2.1.3'
+  rxAndroidVersion = "2.0.1"
+  timberVersion = '4.5.1'
+  lombokVersion = "1.18.20"
+  daggerVersion = '2.15'
+  guavaVersion = '18.0'
+  archVersion = '1.1.0'
+  roomVersion = '1.0.0'
+  retrofitVersion = "2.3.0"
+  okHttpVersion = '3.8.1'
+  stethoVersion ="1.5.0"
+
+  materialDialogVersion = "0.9.6.0"
+  materialTimePickerVersion ="3.5.0"
+  saripaarVersion ="2.0.3"
+
+  ultimaterecyclerviewVersion ="0.7.3"
+
+  gsonVersion ="2.7"
+  PersistentCookieJarVersion ="v1.0.1"
+  stethoVersion ="1.5.0"
+
+  butterKnifeVersion ="8.8.1"
+
+  statefulVersion ="1.2.1"
+  canaryVersion = "1.5.4"
+
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_pending"
+        >
+
+        <!--herman add  start-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_pending"
+            android:paddingTop="@dimen/activity_pending"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:text="@string/temperatureInfo"
+            style="@style/FormLabel"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temperature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="100sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/temperature_degrees"
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+        <!--herman end-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            />
+
+        <Button
+            android:id="@+id/test_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/temp_background"
+            android:text="@string/clicktotest"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/calibration_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:background="@drawable/temp_background"
+            android:text="@string/clicktoCalibration"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+        <!--krestin remove bottom text start-->
+        <!--<TextView
+            android:id="@+id/testMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/physicalMode"
+            android:textColor="#000000"
+            android:textSize="20sp" />-->
+        <!--krestin remove bottom text end-->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,279 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+        <item name="MColorPrimary">@color/colorPrimary</item>
+        <item name="MColorSecondary">@color/colorSecondary</item>
+        <item name="MColorTertiary">@color/colorTertiary</item>
+
+        <item name="colorPrimary">?attr/MColorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/color_primary_selector</item>
+        <item name="android:textColorSecondary">@color/color_secondary_selector</item>
+        <item name="android:textColorTertiary">@color/colorBlackTertiary</item>
+        <item name="android:editTextColor">@color/colorBlack</item>
+        <item name="android:textColorTertiaryInverse">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+        <item name="android:editTextBackground">@android:color/transparent</item>
+        <item name="editTextStyle">@style/MEditTextStyle</item>
+
+        <item name="android:buttonStyle">@style/MButton</item>
+        <item name="colorControlHighlight">?attr/MColorPrimary</item>
+        <item name="MTitleCenter">true</item>
+
+        <item name="MButtonBackground">@drawable/button_background_material</item>
+        <item name="MButtonInverseBackground">@drawable/button_background_material_inverse</item>
+
+        <item name="actionBarPopupTheme">@style/MActionBarPopupTheme</item>
+
+
+        <item name="android:listViewStyle">@style/MListViewStyle</item>
+        <item name="android:textAppearanceListItemSmall">@style/MTextAppearanceListItem</item>
+
+        <item name="actionBarStyle">@style/MActionBarStyle</item>
+
+        <item name="md_title_color">@color/colorBlack</item>
+        <item name="md_content_color">?android:textColorSecondary</item>
+        <item name="md_positive_color">@color/color_primary_selector</item>
+        <item name="md_negative_color">@color/color_primary_selector</item>
+
+    </style>
+
+
+    <style name="Theme.SplashTheme" parent="Theme.AppCompat.Light">
+        <!--<item name="android:windowBackground">@drawable/splash</item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--去掉底部的导航-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--设置底部导航栏为透明色-->
+        <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="MActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+
+    <!--  override actionbar title fontFamily-->
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="AppTheme.Dark">
+        <item name="MTitleCenter">false</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorTertiary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">?attr/MColorPrimary</item>
+        <item name="android:textColorSecondaryInverse">?attr/MColorSecondary</item>
+        <item name="android:textColorTertiaryInverse">?attr/MColorTertiary</item>
+        <item name="android:editTextColor">@color/colorBlack</item>
+        <item name="android:windowBackground">?attr/MColorPrimary</item>
+        <item name="MButtonBackground">@drawable/button_background_dark_material</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+        <item name="md_dark_theme">false</item>
+        <item name="md_content_color">@color/color_secondary_selector</item>
+    </style>
+
+    <style name="MActionBar.Dark" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">  
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+    <style name="MView">
+        <item name="android:theme">@style/AppTheme</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Dark.Gradient">
+        <item name="android:background">@drawable/background_gradient</item>
+    </style>
+
+    <style name="AppTheme.Dark.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MActionBarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlHighlight">?attr/MColorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DarkHintText" parent="Base.TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/mtk_white_transparent</item>
+    </style>
+
+    <style name="DarkHintText.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MEditTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="MButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">?attr/MButtonBackground</item>
+    </style>
+
+    <style name="MButton.Inverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+        <item name="android:background">@drawable/button_background_material_inverse</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MButton.Inverse.Small">
+        <item name="android:minHeight">24dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="textAppearance">@style/TextAppearance.AppCompat.Small2</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small.Label">
+        <item name="android:textColor">@color/color_primary_selector</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small.Value">
+        <item name="android:textColor">@color/color_blank_selector</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small2" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/text_size_small2</item>
+    </style>
+
+
+    <style name="FormLabel" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Label</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minWidth">@dimen/min_width_form_label</item>
+        <item name="android:paddingEnd">@dimen/padding_text_horizontal</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="FormLabel.ListItem">
+        <item name="android:theme">@style/FormLabel</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FormEdit" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:paddingStart">@dimen/padding_text_horizontal</item>
+        <item name="android:paddingEnd">@dimen/padding_text_horizontal</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="FormValue" parent="@android:style/Widget.Material.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:paddingStart">@dimen/padding_text_horizontal</item>
+        <item name="android:paddingEnd">@dimen/padding_text_horizontal</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Value</item>
+    </style>
+
+    <style name="FormHint" parent="@android:style/Widget.Material.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small2</item>
+    </style>
+
+    <style name="MListViewStyle" parent="@android:style/Widget.Material.ListView">
+        <item name="android:background">@drawable/list_view_background</item>
+        <item name="android:divider">@color/colorBlackFourth</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="MTextAppearanceListItem" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/color_list_item_selector</item>
+    </style>
+
+    <style name="ClickableTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/color_primary_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ListItemLayout">
+        <item name="android:paddingTop">@dimen/activity_pending</item>
+        <item name="android:paddingBottom">@dimen/activity_pending</item>
+    </style>
+
+    <style name="TableCellText" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TableCellText.Label">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Label</item>
+    </style>
+
+    <style name="TableCellText.Value">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Value</item>
+    </style>
+
+    <style name="BpChartText" parent="@android:style/Widget.Material.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="BpChartText.AxisLabel">
+        <item name="android:textColor">@color/eb_gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BpChartText.AxisLabel.Y">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="BpChartText.CategoryLabel">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="ResultSubTitle" parent="@android:style/Widget.Material.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_horizontal_margin_2</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

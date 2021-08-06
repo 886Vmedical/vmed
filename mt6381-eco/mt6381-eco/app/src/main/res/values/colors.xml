@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="colorPrimary">#2E94AD</color>
+  <color name="colorSecondary">#992E94AD</color>
+  <color name="colorTertiary">#aacdd5</color>
+  <color name="colorFourth">#e1eaeb</color>
+
+  <color name="colorWhite">#FFEEECEA</color>
+  <color name="colorWhiteSecondary">#e6e6e6</color>
+  <color name="colorWhiteTertiary">#d1d1d1</color>
+
+  <color name="colorBlack">#353630</color>
+  <color name="colorBlackSecondary">#6c6c6c</color>
+  <color name="colorBlackTertiary">#FF999A94</color>
+  <color name="colorBlackFourth">#dddddd</color>
+  <color name="colorWechat">#2DC100</color>
+  <color name="colorWechatSecondary">#B32DC100</color>
+
+  <color name="colorBlackImage">#E6E5E3</color>
+
+  <color name="main_color">#36B8AB</color>
+
+  <color name="mtk_gold">#FFF39A1E</color>
+  <color name="mtk_gold_light">#88F39A1E</color>
+  <color name="mtk_blue">#FF00A1DE</color>
+  <color name="mtk_blue_light">#dbf5ff</color>
+  <color name="mtk_green">#FF69BE28</color>
+  <color name="mtk_pink">#FFD71F85</color>
+  <color name="mtk_grey">#FF353630</color>
+  <color name="mtk_blue_2">#6dcaec</color>
+  <color name="mtk_green_press">#FF669900</color>
+  <color name="mtk_blue_press">#0081B2</color>
+  <color name="mtk_gold_press">#C27B18</color>
+  <color name="mtk_pink_press">#AC196A</color>
+  <color name="mtk_grey_press">#2A2B26</color>
+  <color name="mtk_white">#FFFFFF</color>
+  <color name="mtk_white_transparent">#66FFFFFF</color>
+  <color name="mtk_black_hint">#9B9B9B</color>
+  <color name="mtk_black_transparent">#66000000</color>
+
+  <color name="mtk_black_title">#4A4A4A</color>
+  <color name="mtk_black_subtitle">#9B9B9B</color>
+
+  <color name="bg">#f4f4f4</color>
+  <color name="material_blue_500">#5677fc</color>
+  <color name="material_blue_600">#4e6cef</color>
+
+  <color name="text.color.holo">#FF555555</color>
+  <color name="text.color.holo.light">#7F555555</color>
+  <color name="green">#75cd00</color>
+  <color name="green_dark">#3c6e02</color>
+  <color name="blue">#0044e1</color>
+  <color name="blue_dark">#00217c</color>
+  <color name="red">#d11e2c</color>
+  <color name="red_dark">#810f19</color>
+  <color name="gray">#b6b1ac</color>
+  <color name="gray_dark">#6d6967</color>
+  <color name="gray_deep">#8C8C8C</color>
+  <color name="gray_light">#999999</color>
+  <color name="black">#000000</color>
+  <color name="black_pressed">#7b7b7b</color>
+  <color name="record_bg">#F2F1F1</color>
+  <color name="ldrawer_color">#FFFFFF</color>
+
+  <!-- Theme color -->
+  <color name="colorPrimaryDark">#024865</color>
+  <color name="colorAccent">#FFD71F85</color>
+  <color name="colorControlNormal">#4DFFFFFF</color>
+
+  <!-- Main color -->
+  <color name="gs_green">#8CC152</color>
+  <color name="gs_yellow">#F6BB42</color>
+  <color name="gs_red">#E57D6B</color>
+
+  <color name="gs_x_dark_blue">#293645</color>
+  <color name="gs_dark_blue">#024F71</color>
+  <color name="gs_deep_blue">#598CA2</color>
+  <color name="gs_blue">#64B5D4</color>
+  <color name="gs_light_blue">#7ABAD1</color>
+  <color name="gs_purple">#ACCFF0</color>
+
+  <color name="gs_x_dark_gray">#333333</color>
+  <color name="gs_dark_gray">#555555</color>
+  <color name="gs_gray">#999999</color>
+  <color name="gs_light_gray">#d2d2d2</color>
+  <color name="gs_x_light_gray">#EFEFEF</color>
+
+  <!-- Misc -->
+  <color name="bg_main">#EFEFEF</color>
+  <color name="bg_launch_blue_top">#001E42</color>
+  <color name="bg_launch_blue_bottom">#069DBC</color>
+  <color name="bg_btn_dark_blue_on_pressed">#013A54</color>
+  <color name="gs_light_blue_20">#337ABAD1</color>
+
+
+  <color name="mtk_orange">#ED6D00</color>
+  <color name="transparent">#00000000</color>
+  <color name="white_pressed">#f1f1f1</color>
+  <color name="edittext_border">#99bbbbbb</color>
+  <color name="D_black_light_1">#ff333333</color>
+  <color name="G_black_light_5">#ffcccccc</color>
+  <color name="white">#ffffff</color>
+
+  <color name="hr_grid_line_color">#66F3767B</color>
+
+  <color name="line_chart_bg">#F7F6F6</color>
+
+  <color name="eb_x_light_gray">#EEECEA</color>
+  <color name="eb_x_dark_gray">#353630</color>
+  <color name="eb_red">#FD5E44</color>
+  <color name="eb_green">#69BE28</color>
+  <color name="eb_orange">#FFAE14</color>
+
+  <color name="eb_gray">#999999</color>
+
+  <color name="male_start">#2978B2</color>
+  <color name="male_end">#36B8AB</color>
+
+  <color name="ecg_color">#E9573F</color>
+  <color name="ppg_color">#3BAFDA</color>
+
+  <color name="gradientStart">#2978B2</color>
+  <color name="gradientEnd">#36B8AB</color>
+</resources>

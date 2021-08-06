@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_pending"
+    >
+
+
+  <LinearLayout
+      android:id="@+id/layout_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:divider="@drawable/divider"
+      android:minWidth="@dimen/min_width_profile_form"
+      android:orientation="vertical"
+      android:padding="@dimen/activity_pending"
+      android:showDividers="end|middle"
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <TextView
+          android:id="@+id/label_account"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableStart="@drawable/icon_list_account"
+          android:labelFor="@+id/edt_account"
+          android:text="@string/account"
+          style="@style/FormLabel"
+
+          />
+      <EditText
+          android:id="@+id/edt_account"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/label_account"
+          android:layout_alignTop="@+id/label_account"
+          android:layout_toEndOf="@+id/label_account"
+          android:hint="@string/hint_account"
+          android:imeOptions="actionNext"
+          android:maxLength="50"
+          style="@style/FormEdit"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <TextView
+          android:id="@+id/label_password"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableStart="@drawable/icon_list_password"
+          android:labelFor="@+id/edt_password"
+          android:text="@string/password"
+          style="@style/FormLabel"
+          />
+      <EditText
+          android:id="@+id/edt_password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/label_password"
+          android:layout_alignTop="@+id/label_password"
+          android:layout_toEndOf="@+id/label_password"
+          android:imeOptions="actionDone"
+          android:inputType="textPassword"
+          android:maxLength="50"
+          android:hint="@string/hint_password"
+          style="@style/FormEdit"
+          />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/pd_found"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:textColor="@color/colorPrimary"
+          android:text="@string/password_find" />
+
+      <TextView
+          android:id="@+id/pd_reset"
+          android:layout_marginLeft="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:textColor="@color/colorPrimary"
+          android:text="@string/password_reset" />
+
+    </LinearLayout>
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="16dp"
+      />
+  <Button
+      android:id="@+id/btn_continue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/continue_sign_in"
+      style="@style/MButton.Inverse"
+      />
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':app', ':toggle-button-lib', ':mp-chart-lib', ':rxblesm', ':data_parsing'
+
+project(':rxblesm').projectDir = new File('../rxblesm')

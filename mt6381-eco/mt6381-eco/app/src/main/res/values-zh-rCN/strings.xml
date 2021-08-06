@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+  <string name="mediatek_policy">Vmed 专为指导个人健康和运动而设计，量测结果仅用于自主健康管理，而非用于医学诊断。
+    \n点击“继续”，意味着同意Vmed的
+    <a href="com.mediatek.webView:///android_asset/htmls/terms_conditions_CN.html">条款、条件</a>及
+		<a href="com.mediatek.webView:///android_asset/htmls/privacy_policy_CN.html">隐私政策</a>。</string>
+  <string name="mediatek_policy_about">
+    <a href="com.mediatek.webView:///android_asset/htmls/terms_conditions_CN.html">条款、条件</a>及
+		<a href="com.mediatek.webView:///android_asset/htmls/privacy_policy_CN.html">隐私政策</a></string>
+  <string name="measure_ready_subtitle">指尖分别按住两个感应区域。若要水平握持，请逆时针旋转手机。</string>
+  <string name="fatigue_index_wrap">疲劳指数</string>
+  <string name="pressure_index_wrap">压力指数</string>
+  <string name="input_golden">输入标准值</string>
+  <string name="measure_ready_subtitle_horizontal">指尖分别按住两个感应区域。请确保手机镜头置于左侧。</string>
+  <string name="no_data">没有历史数据!</string>
+  <string name="no_chart_data">没有历史图表数据!</string>
+  <string name="screening_education_content">心电图记录心脏的电生理活动，并通过皮肤上的电极捕捉并记录下来的诊疗技术。每次心跳心肌细胞去极化过程中，都会在皮肤表面引起很小的电学改变。这个小变化被心电图记录装置捕捉、放大即可描绘心电图。心电图可以反应整个心脏跳动的节律，以及心肌薄弱的部分。</string>
+  <string name="measure_status_measure">量测中，请耐心等待</string>
+  <string name="test_throughput_error">传输速度测试失败</string>
+  <string name="error_network_maybe_unavailable">无法连接到服务器</string>
+  <string name="empty_value">--</string>
+  <string name="empty_value_pair">--/--</string>
+  <string name="spo2_education_content">血氧饱和度是量测红血球内的氧气含量。正常人在平静时血氧浓度为 95%% &#126; 100%%.血氧浓度正常，表示心脏有效得将氧气运输到身体各器官。当血氧浓度过低时，可能代表呼吸和循环功能受到影响。</string>
+  <string name="calibrate_success_to_calibrate">%1$s 您好，校准已完成。数据将保存到您的个人模型。是否需要重新校准？</string>
+  <string name="calibrate_success_to_measure">%1$s，您好，您的个人模型已经全部校准。是否需要立即量测？</string>
+  <string name="validate_number_range_invalid">请在[%1$d - %2$d]区间内输入数值</string>
+  <string name="app_version">v%1$s</string>
+  <string name="all_version">%1$s, %2$s, %3$s, %4$s, %5$s</string>
+  <string name="throughput_warning_formatter">传输速度为 %1$.2f Kb/s \n
+    你的装置距离手机较远或现场环境较差，建议讲装置移得比较近再进行量测</string>
+  <string name="measure_result_info">%1$s，您好，测试结果会与性别、年龄、体指数相同的用户进行比较。</string>
+  <string name="abnormal_formatter">异常率  -  %1$d%%</string>
+  <string name="screening_error_formatter">无法加载数据(%1$s) - 重新尝试</string>
+  <string name="load_more_error">无法加载数据(%1$s) - 重新尝试</string>
+  <string name="error_network_unexpected">出现未知错误(%1$s)</string>
+  <string formatted="false" name="wave_form_duration">%1$.2f&#126;%2$.2fs</string>
+  <string name="blood_pressure_formatter">%1$d/%2$d</string>
+  <string name="error_scan_fail">搜寻装置失败(%1$s)</string>
+  <string name="error_peripheral_communicate">无法与装置通讯(%1$s)</string>
+  <string name="error_peripheral_connect">无法与装置连接(%1$s)</string>
+  <string name="error_peripheral_disconnect">无法与装置断线(%1$s)</string>
+  <string name="error_throughput">传输测试失败(%1$s)</string>
+  <string name="percentage_formatter">%1$d/100</string>
+  <string name="percentage_formatter_abbr">%1$d%%</string>
+  <string name="formatter_downloading">下载中%1$.1f%%</string>
+  <string name="formatter_installing">安装中%1$.1f%%</string>
+  <string name="formatter_firmware_available">(可用版本 %1$s)</string>
+  <string name="app_name">Vmed</string>
+  <string name="measure">量测</string>
+  <string name="health_journal">健康日志</string>
+  <string name="screening">预筛查</string>
+  <string name="consulting">问诊</string>
+  <string name="ranking">排名</string>
+  <string name="health_report">健康报告</string>
+  <string name="exercise">运动</string>
+  <string name="daily_diet">日常饮食</string>
+
+  <string name="health_weather_label">预筛查</string>
+  <string name="marketplace_label">健康报告</string>
+  <string name="exercise_view_label">运动</string>
+  <string name="daily_diet_label">日常饮食</string>
+
+  <string name="measures_6_health_readings_in_60_seconds">60秒内测出十项生理指标</string>
+  <string name="measure_ready_title">准备量测</string>
+  <string name="waveform">波形图</string>
+  <string name="heart_rate_title">心率</string>
+  <string name="blood_pressure_title">血压</string>
+  <string name="blood_pressure_title_ab">血压</string>
+  <string name="start">开始</string>
+  <string name="close">停止</string>
+  <string name="cancel_measure_tips">确定取消本次的量测吗？</string>
+  <string name="measure_interrupt_no">否</string>
+  <string name="measure_interrupt_yes">是</string>
+  <string name="measure_interrupt_title">量测中断</string>
+  <string name="measure_interrupt_msg">暂时无法读取准确数据，请重新将手指放于感应区域上。</string>
+  <string name="bp_measure_exception_title">量测错误</string>
+  <string name="bp_measure_exception_msg">血压值: %  是否需要重新测试？</string>
+  <string name="bad_signal_tips">暂时无法读取准确数据，请重新将手指放于感应区域上。</string>
+  <string name="status_title">进度</string>
+  <string name="heart_rate_title_ab">心率</string>
+  <string name="heart_rate_variability">心率变异性</string>
+  <string name="ppg_title">脉波图</string>
+  <string name="ppg2_title">脉波图2</string>
+  <string name="ecg_title">心电图</string>
+  <string name="bpm_text">bpm</string>
+  <string name="mmhg_text">mmHg</string>
+  <string name="measure_result">量测结果</string>
+  <string name="systolic_title">收缩压</string>
+  <string name="diastolic_title">舒张压</string>
+  <string name="spo2_title">血氧饱和度</string>
+  <string name="brv_title">呼吸率</string>
+  <string name="temp_title">体温</string>
+  <string name="temp_string_data">未测量</string>
+  <string name="default_no_measure">未测量</string>
+  <string name="fatigue_index">疲劳指数</string>
+  <string name="pressure_index">压力指数</string>
+  <string name="fatigue">疲劳指数</string>
+  <string name="pressure">压力指数</string>
+  <string name="nav_calibrate1">对量测结果有疑问?</string>
+  <string name="nav_calibrate2">点击这里为您的生理状况进行校准</string>
+  <string name="normal">&#60;10</string>
+  <string name="abnormal">&#62;10</string>
+  <string name="input_golden_again">再输入标准值</string>
+  <string name="ready_to_calibration">准备校准</string>
+  <string name="cancel_calibrate">是否确定取消校准？</string>
+  <string name="calibrate_interrupted">校准中断</string>
+  <string name="calibrate_error">暂时无法读取准确数据。请再次确定手指是否位于感应区域。是否需要重新量测？</string>
+  <string name="success_tips">校准完成</string>
+  <string name="hr_spo2">心率/血氧饱和度</string>
+  <string name="hrv">心率变异性</string>
+  <string name="brv">呼吸率</string>
+  <string name="bp">血压</string>
+  <string name="local_temp">访客体温记录</string>
+  <string name="offline_record">访客测量记录</string>
+  <string name="measure_record">量测记录</string>
+  <string name="normal_area">正常区间</string>
+  <string name="day">日</string>
+  <string name="week">周</string>
+  <string name="month">月</string>
+  <string name="high">高</string>
+  <string name="low">低</string>
+  <string name="date">日期</string>
+  <string name="time">时间</string>
+  <string name="loading">读取中…</string>
+  <string name="invalid_value">请输入数值</string>
+  <string name="validate_required_invalid">请输入数值</string>
+  <string name="next">下一步</string>
+  <string name="cancel">取消</string>
+  <string name="no">否</string>
+  <string name="finish">完成</string>
+  <string name="again">再来一次</string>
+  <string name="yes">是</string>
+  <string name="ok">确定</string>
+  <string name="height_title">身高</string>
+  <string name="unit_cm">厘米</string>
+  <string name="weight_title">体重</string>
+  <string name="profile_text">个人信息</string>
+  <string name="connect_internet_tips">请先连接网络，完成后续分析。</string>
+  <string name="sign_in">登录</string>
+  <string name="account">账号</string>
+  <string name="password">密码</string>
+  <string name="sign_out">登出</string>
+  <string name="nick_name">名字</string>
+  <string name="gender">性别</string>
+  <string name="height">身高</string>
+  <string name="birthday">出生日期</string>
+  <string name="weight">体重</string>
+  <string name="photo">照片</string>
+  <string name="complete">完成</string>
+  <string name="password_find">找回密码</string>
+  <string name="password_reset">重置密码</string>
+  <string name="new_password">新密码</string>
+  <string name="confirm_password">确认密码</string>
+  <string name="newpd_hint">请输入新的密码</string>
+  <string name="conpd_hint">请确认新的密码</string>
+
+  <string name="app_default"></string>
+  <string name="version_check">检测新版本</string>
+  <string name="str_checking">检测中...</string>
+  <string name="latest_version">当前已是最新版本</string>
+  <string name="str_install">安装</string>
+  <string name="has_new_version">检测到有新版本应用</string>
+  <string name="new_version_checked">已检测到新版本</string>
+  <string name="installing">安装中...</string>
+  <string name="install_success">安装成功！</string>
+  <string name="install_attention">您想现在就更新到最新版本吗？</string>
+  <string name="pre_installing">预备安装中...</string>
+
+  <string name="mediatek_logo">Vmed logo</string>
+  <string name="invalid_data_format">无效的日期格式</string>
+  <string name="error_nick_name_required">请填写名字</string>
+  <string name="error_gender_required">请填写性别</string>
+  <string name="error_birthday_required">请填写生日</string>
+  <string name="error_height_required">请填写身高</string>
+  <string name="error_weight_required">请填写体重</string>
+  <string name="saving">保存中</string>
+  <string name="save">保存</string>
+  <string name="searching_for_device">搜寻装置</string>
+  <string name="refresh">重新搜寻</string>
+  <string name="skip">跳过</string>
+  <string name="connect">连接</string>
+  <string name="connecting">连接中</string>
+  <string name="throughput">传输速度</string>
+  <string name="slow_throughput">蓝牙传输速度过慢</string>
+  <string name="continue_to_next">继续下一步</string>
+  <string name="connection_lost">蓝牙连接断线</string>
+  <string name="temperature">测量体温</string>
+  <!--krestin add covid-19 string start-->
+  <string name="current_data">当前测量结果</string>
+  <string name="string_temp">体温</string>
+  <string name="string_localtemp">访客体温记录</string>
+  <string name="temperature_default">36.5</string>
+  <string name="brv_default">17</string>
+  <string name="spo2_default">98%</string>
+  <string name="string_spo2">血氧饱和度</string>
+  <string name="string_brv">呼吸率</string>
+  <string name="string_covidText">您是否已经完成 \"测量体温\" 和 \"量测\" 的测试？</string>
+  <string name="string_toast">请您先完成 \"测量体温\" 和 \"量测\" 的测试，然后再继续操作...</string>
+  <string name="string_covidRemind">温馨提示：\n\n 如果您的体温高于38摄氏度、血氧饱和度低于87%以及呼吸率超出12-20的范围，您可能有新冠病毒的风险，请您立即就医检查。</string>
+  <!--krestin add covid-19 string end-->
+  <string name="temperatureTitle">您的体温:</string>
+  <string name="temperatureInfo">当前体温</string>
+  <string name="temperature_degrees">摄氏度</string>
+  <string name="virusPrompt">您的体温高，有新冠肺炎风险，建议去医院复查。</string>
+  <string name="profile">个人信息</string>
+  <string name="bluetooth">蓝牙</string>
+  <string name="about">关于</string>
+  <string name="arrow_right">向右旋转</string>
+  <string name="heart_rate_risk">心跳活动不规则比率</string>
+  <string name="recent_history">近期量测资料</string>
+  <string name="health_education">健康资讯</string>
+  <string name="no_risk_formatter">&#60;10%%</string>
+  <string name="screening_education_title">心电图解析</string>
+  <string name="end">结束</string>
+  <string name="connect_exception">连接异常。请退出后重新尝试。</string>
+  <string name="unknown_error">出现未知错误</string>
+  <string name="create_an_account">建立账号</string>
+  <string name="i_am_a_guest">我是访客</string>
+  <string name="continue_sign_in">继续</string>
+  <string name="hint_account">请输入至少4个字符</string>
+  <string name="hint_password">请输入至少8个字符</string>
+  <string name="hint_maccount">手机号码或邮箱账号</string>
+  <string name="hint_mpassword">请输入箱密码</string>
+  <string name="hint_vertification">输入验证码</string>
+  <string name="ver_text">获取验证码</string>
+  <string name="ver_timer_text">重新发送</string>
+  <string name="ver_second">秒</string>
+
+  <string name="get_started">开始</string>
+  <string name="attention">请注意</string>
+  <string name="guest_create_account_success_tip">您的个人帐户已创建完毕。访客期间的历史数据也已整合完毕。</string>
+  <string name="guest">访客</string>
+  <string name="connected">连接成功</string>
+  <string name="confirm_connected">断开设备或继续</string>
+  <string name="disconnect">断开</string>
+  <string name="remote_this_device">移除装置</string>
+  <string name="power">电量</string>
+  <string name="synced">上次同步时间</string>
+  <string name="version">版本号</string>
+  <string name="up_to_date">最新版</string>
+  <string name="device_name">装置名称</string>
+  <string name="error_network_unavailable">无法连接网络</string>
+  <string name="hr_risk">心跳活动不规则比率</string>
+  <string name="error_fail_to_enable_bluetooth">未能启用蓝牙连接</string>
+  <string name="error_peripheral_connection_lost">连接中断</string>
+  <string name="downgrade">降级</string>
+  <string name="upgrade">版本升级</string>
+  <string name="alert_screen_purchase_confirm1">预筛查功能需要订阅方能使用。</string>
+  <string name="alert_screen_purchase_confirm2">是否订阅?</string>
+  <string name="waiting">等待中…</string>
+  <string name="token_invalid_need_re_login">请重新登录</string>
+  <string name="relogin">请重新登录</string>
+  <string name="hr_education_title">心率</string>
+  <string name="hr_education_content">心率是心脏每分钟跳动的次数，每次心脏的跳动都会造成血管的收缩与舒张，并造成血液流量的改变。正常人在平静时每分钟心跳在50 到 100 次区间，运动时心跳会加速；心肺功能较好的人心跳比较慢，年龄的增长也会使心率降低。</string>
+  <string name="spo2_education_title">血氧饱和度</string>
+  <string name="bp_education_title">血压</string>
+  <string name="bp_education_content">血压是指心脏运送血液时对血管壁造成的压力。心脏收缩时为收缩压，舒张时为舒张压。正常情况下波动在120mmHg/80mmHg 范围内，若收缩压超过 140 mmHg，则可能为高血压患者。血压在一定范围内是变动的，会随着运动量，心情紧张而起伏。因此最好在休息5分钟后再量测血压，量测前30分钟应避免服用影响血压的食物。</string>
+  <string name="hrv_education_title">心率变异</string>
+  <string name="hrv_education_content">心率变异量测人在平静时的心跳变化，反映了自律神经的现状。自律神经由交感神经与副交感神经共同组成，人们的意识状态以及情绪，都会影响到自律神经。当人变得焦虑紧张时，交感神经也会显得旺盛。当该指数过高时，建议调整心情，深呼吸让身体放松。</string>
+  <!--krestin add brv menu string start-->
+  <string name="brv_education_title">呼吸率</string>
+  <string name="brv_education_content">呼吸频率的间隔变化代表心脏自主神经输入的逐拍变化。</string>
+  <string name="exception_retest">请您调整测量姿势，重新进行测量</string>
+  <!--krestin add brv menu string end-->
+  <string name="create_account">建立账号</string>
+  <string name="create_account_success">成功</string>
+  <string name="measure_status_checking">确认中…</string>
+  <string name="measure_status_measuring">量测中…</string>
+  <string name="measure_status_interrupted">量测中断了</string>
+  <string name="measure_status_completed">量测完成</string>
+  <string name="ekg">心电图</string>
+  <string name="ppg">脉波图</string>
+  <string name="quality">讯号品质</string>
+  <string name="exit">离开</string>
+  <string name="uploading">上传中…</string>
+  <string name="bp_category_hypotension">低血压</string>
+  <string name="bp_category_normal">正常</string>
+  <string name="bp_category_pre_hypertension">高血压前期</string>
+  <string name="bp_category_hypertension">高血压</string>
+  <string name="hr_category_lower">&#60;60</string>
+  <string name="hr_category_normal">60~100</string>
+  <string name="hr_category_higher">&#62;100</string>
+  <string name="spo2_category_danger">&#60;85</string>
+  <string name="spo2_category_lower">85~94</string>
+  <string name="spo2_category_normal">&#62;94</string>
+  <!-- krestin add brv data range start -->
+  <string name="brv_category_danger">&#60;12</string>
+  <string name="brv_category_lower">12~20</string>
+  <string name="brv_category_normal">&#62;20</string>
+  <!-- krestin add brv data range end -->
+  <!-- krestin add temp data range start -->
+  <string name="temp_category_danger">&#60;35</string>
+  <string name="temp_category_lower">35~38</string>
+  <string name="temp_category_normal">&#62;38</string>
+  <!-- krestin add temp data range end -->
+  <string name="fatigue_category_good">&#60;30</string>
+  <string name="fatigue_category_tired">30~70</string>
+  <string name="fatigue_category_overworked">&#62;70</string>
+  <string name="pressure_category_good">&#60;30</string>
+  <string name="pressure_category_nervous">30~70</string>
+  <string name="pressure_category_breakdown">&#62;70</string>
+  <string name="hrrisk_category_normal">&#60;10</string>
+  <string name="hrrisk_category_low_risk">10~20</string>
+  <string name="hrrisk_category_high_risk">&#62;20</string>
+  <string name="error_start_measure_fail">无法开始量测</string>
+
+  <string name="slow_throughput_continue_exit">蓝牙传输速度过慢，是否要继续量测？</string>
+  <string name="male">男</string>
+  <string name="female">女</string>
+  <string name="guest_attention_first_time">访客账号仅保存最近两周的量测结果。如果切换至其他装置或删除本应用程序，您将失去历史记录。您确定要使用访客账号？</string>
+  <string name="guest_attention">访客账号仅保存最近两周的量测结果。如果切换至其他装置或删除本应用程序，您将失去历史记录。是否创建个人帐户保留既有数据?</string>
+  <string name="meet_an_error">蓝牙连接中断，请重新连接装置进行量测</string>
+  <string name="device_info">装置资讯</string>
+  <string name="edit_device_name">修改装置名称</string>
+  <string name="install">安装</string>
+  <string name="download">下载</string>
+  <string name="fota_success">新版韧体已经安装完成，请重新连结装置</string>
+  <string name="ready_to_install">已可进行安装</string>
+  <string name="content_fota_install">安装过程中请勿退出此 App，所有功能将暂停使用</string>
+  <string name="checking_new_fw">(新软体确认中…)</string>
+  <string name="error_measurement_interrupted">量测错误中断</string>
+  <string name="timeout">超时</string>
+  <string name="personal_status_hint">您是否有服用控制血压药物</string>
+  <string name="default_select">请选择</string>
+  <string name="personal_status_none">无</string>
+  <string name="personal_status_hypertension">高血压药</string>
+  <string name="personal_status_hypotension">低血压药</string>
+  <string name="error_personal_status_required">此为必填栏位</string>
+  <string name="take_medicine_time_hint">用药时间</string>
+  <string name="clear">清空</string>
+  <string name="no_medicine_choice">请选择您的用药时间段，然后再继续...</string>
+  <string name="error_measurement_aborted">量测错误终止</string>
+  <string name="calibrated">已进行个人校准</string>
+  <string name="delete_calibration">删去个人校准纪录</string>
+  <string name="signal_finger_off_ecg">Finger_ECG</string>
+  <string name="signal_finger_off_ppg">Finger_PPG</string>
+  <string name="signal_quality_low_ecg">Quality_ECG</string>
+  <string name="signal_quality_low_ppg">Quality_PPG</string>
+  <string name="signal_quality_low_ppg2">Quality_PPG2</string>
+
+  <string name="down_sample">Down sample</string>
+
+  <string name="meal_advice_title">膳食建议</string>
+  <string name="meals">膳食</string>
+  <string name="bmi">身体质量指数(BMI) : 22</string>
+  <string name="basal_metabolism">基础代谢(cal) : 1385 cal</string>
+  <string name="lunch_calories">午餐卡路里(cal) : 665 cal</string>
+
+  <string name="grain">谷类</string>
+  <string name="egg_meat">蛋肉类</string>
+  <string name="grease">油脂类</string>
+  <string name="fruits">水果类</string>
+  <string name="vegetables">蔬菜类</string>
+
+  <string name="yanmai">燕麦一碗</string>
+  <string name="yarou">鸭肉一份（一份35克）</string>
+  <string name="peigen">培根50克</string>
+  <string name="fruits_category">水果50克</string>
+  <string name="xiaofanqie">小番茄一份（一份23颗</string>
+  <string name="bocai">菠菜100克</string>
+
+
+  <string name="consulting_txt">采用对话方式，向病人及其知情者查询疾病的发生、发展情况和现在症状、治疗经过等，以诊断疾病的方法。</string>
+  <string name="ranking_txt">根据大数据分析，结合您的健康情况，您的健康情况排名为第101名。</string>
+  <string name="health_txt">通过大数据对您的健康状况分析，目前您的身体状况良好。</string>
+  <string name="exercise_txt">每天坚持运动，有助于缓解工作疲劳，提高身体新陈代谢，促进血液循环，十分有益于身体健康。</string>
+  <string name="deit_txt">人每天应吃齐四类食物，五谷、蔬果、乳类和肉类。</string>
+
+  <string name="temperature_attention">如果您还没有测量体温，建议您先测量体温。</string>
+  <string name="temperature_attention2">请点击本页右上角的蓝牙图标测量体温。</string>
+  <string name="temperature_attention3">握住Vmed红外传感器顶部距离面部或皮肤2“-6”英寸以检测温度。</string>
+  <string name="journal_attention">请在此处查看您当前的健康记录和任何健康问题通知。</string>
+  <string name="backToHome">返回到量测界面</string>
+  <string name="ok2">好的</string>
+  <string name="temp_measuring">正在测温</string>
+
+  <string name="temp_settings">温度设置</string>
+  <string name="temp_out_of_range">测量环境超出设备自身可适应的范围</string>
+  <string name="temp_remeasure">请重新测量</string>
+
+  <string name="physicalMode">当前在物理按键模式</string>
+  <string name="virtualMode">当前在虚拟按键模式</string>
+  <string name="switchMethod">切换模式</string>
+  <string name="clicktotest">点击测温</string>
+  <string name="clicktoCalibration">校准</string>
+  <string name="wait_temperature">正在测温，请等待...</string>
+  <string name="temperature_calibration">正在校准，请等待...</string>
+
+
+  <string name="countdown">倒计时</string>
+
+  <string name="medtimeTitle">用藥提醒</string>
+  <string name="medtimeContent">您的用藥時間：\n</string>
+  <string name="medstickTitle">您有一條新提醒</string>
+  <string name="medtimeContentExtra">\n請您按時服藥！</string>
+
+  <string name="outOfYearString">提示：年份选择不能超过2020年.</string>
+
+  <string name="power_low_warning">Vmed 模组电量过低，请及时充电</string>
+
+  <string name="vmed_location_attention">Vmed 蓝牙必须开启定位权限，否则无法搜索到蓝牙设备，是否开启权限？</string>
+
+  <string name="permission_user_attention">为确保Vmed可以正常运行，请前往系统设置开启Vmed所有所需权限</string>
+
+  <string name="go_to_setting">去设置</string>
+  <!--  <string name="kg">千克</string>-->
+<!--  <string name="jin">斤</string>-->
+<!--  <string name="lb">磅</string>-->
+<!--  <string name="cm">厘米</string>-->
+<!--  <string name="inch">英寸</string>-->
+  <string name="bp_warning">请确保手指和传感器清洁干燥，轻压测量。</string>
+
+  <string name="text_account_attention">账号不能少于4位字符</string>
+  <string name="text_short_attention">密码不能少于8位字符</string>
+
+  <string name="attention_save">个人信息未保存，是否放弃此次编辑？</string>
+  <string name="attention_fill_info">个人信息不完整，是否放弃此次编辑？</string>
+
+  <string name="device_name_save">设备信息未保存，您是否放弃本次编辑?</string>
+  <string name="device_null">设备名称不能少于6位字符。</string>
+
+</resources>

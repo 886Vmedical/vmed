@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+ext {
+  versionMajor = 1
+  versionMinor = 1
+  versionPatch = 1
+
+  libraryCode = versionMajor * 1000000 + versionMinor * 1000 + versionPatch
+  libraryVersion = "${versionMajor}.${versionMinor}.${versionPatch}"
+}
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  defaultConfig {
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+
+    versionCode libraryCode
+    versionName libraryVersion
+
+    buildTypes {
+      release {
+        minifyEnabled false
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      }
+    }
+  }
+}
+
+dependencies {
+  implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+  implementation "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+}
+
+gradle.startParameter.taskNames.each { task ->
+  def taskName = task.split(":").last()
+  switch (taskName) {
+    case "bintrayUpload":
+      apply from: 'bintray.gradle'
+      break
+    default:
+      // do nothing
+      break
+  }
+}

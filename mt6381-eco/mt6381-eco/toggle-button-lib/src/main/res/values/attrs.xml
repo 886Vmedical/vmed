@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToggleGroup">
+        <!-- The id of the child radio button that should be checked by default
+             within this radio group. -->
+        <attr name="checkedButton" format="integer" />
+        <!-- Should the radio group be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.  The default is
+             horizontal. -->
+        <attr name="orientation" />
+        <!-- Whether the group should allow multiple selections or not
+             True will behave much like a RadioGroup, allowing only a single child to be checked.
+             False will allow multiple children to be checked.  The default is false.-->
+        <attr name="exclusive" format="boolean"/>
+        <!-- Whether the group should always have a selection
+             True will allow no selection in the group.
+             False will behave much like a RadioGroup, requiring a single child to be checked.
+             The default is false.-->
+        <attr name="allowUnselected" format="boolean"/>
+        <!-- Defines the radius of the corners clipping the contained buttons.-->
+        <attr name="cornerRadius" format="dimension"/>
+        <!-- Defines the elevation of the group.-->
+        <attr name="toggleElevation" format="dimension"/>
+        <!-- Defines the background color of the group.-->
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+
+    <!-- Standard orientation constant. -->
+    <attr name="orientation">
+        <!-- Defines an horizontal widget. -->
+        <enum name="horizontal" value="0" />
+        <!-- Defines a vertical widget. -->
+        <enum name="vertical" value="1" />
+    </attr>
+
+    <declare-styleable name="ToggleButton">
+        <!-- The text for the button when it is checked. -->
+        <attr name="textOn" format="string" />
+        <!-- The text for the button when it is not checked. -->
+        <attr name="textOff" format="string" />
+    </declare-styleable>
+
+    <attr name="toggleGroupStyle" format="reference"/>
+    <attr name="toggleButtonStyle" format="reference"/>
+
+</resources>

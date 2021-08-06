@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="7"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      style="@style/AppTheme.Dark.Gradient"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+        >
+      <TextView
+          android:id="@+id/top_legend_left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:drawablePadding="@dimen/textview_drawable_padding"
+          android:drawableStart="@drawable/icon_history_hr"
+          android:text="@string/waveform"
+          android:textColor="@color/white"
+          />
+      <!--krestin remove mormal area display start-->
+      <TextView
+          android:id="@+id/top_legend_right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:drawablePadding="@dimen/textview_drawable_padding"
+          android:drawableStart="@drawable/icon_history_normal_area"
+          android:text="@string/normal_area"
+          android:textColor="@color/white"
+          android:visibility="gone"
+          />
+      <!--krestin remove mormal area display end-->
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/chartTopView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/mtk_white_transparent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/chartTopChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        >
+
+      <com.mediatek.mt6381eco.biz.history.chart.CareLineChart
+          android:id="@+id/chartTop"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+      <TextView
+          android:id="@+id/top_chart_y_max"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:text="."
+          style="@style/DarkHintText"
+          />
+      <TextView
+          android:id="@+id/top_chart_y_min"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:text="."
+          style="@style/DarkHintText"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+        >
+
+      <TextView
+          android:id="@+id/bottom_legend_left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:drawableLeft="@drawable/icon_history_spo2"
+          android:drawablePadding="@dimen/textview_drawable_padding"
+          android:text="@string/waveform"
+          android:textColor="@color/white"
+          />
+
+      <TextView
+          android:id="@+id/bottom_legend_right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:drawablePadding="@dimen/textview_drawable_padding"
+          android:drawableStart="@drawable/icon_history_normal_area"
+          android:text="@string/normal_area"
+          android:textColor="@color/white"
+          android:visibility="gone"
+          />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/mtk_white_transparent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        >
+      <com.mediatek.mt6381eco.biz.history.chart.CareLineChart
+          android:id="@+id/chartBottom"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin"
+          />
+
+      <TextView
+          android:id="@+id/bottom_chart_y_max"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:text="."
+          style="@style/DarkHintText"
+          />
+      <TextView
+          android:id="@+id/bottom_chart_y_min"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:text="."
+          style="@style/DarkHintText"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+        >
+
+      <TextView
+          android:id="@+id/x_min"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:text=""
+          style="@style/DarkHintText"
+          />
+
+      <android.support.v7.widget.ToggleGroup
+          android:id="@+id/button_group"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/toggle_button_height"
+          android:layout_centerInParent="true"
+          android:layout_margin="5dp"
+          android:divider="@drawable/toggle_divider"
+          app:exclusive="true"
+          app:orientation="horizontal"
+          style="@style/Widget.Material.ToggleButton"
+          >
+
+        <android.support.v7.widget.ToggleButton
+            android:id="@+id/button_day"
+            android:layout_width="@dimen/defImageToggleSize"
+            android:layout_height="@dimen/defImageToggleSize"
+            android:text="@string/day"
+            style="@style/Widget.Material.ToggleButton"
+            />
+
+        <android.support.v7.widget.ToggleButton
+            android:id="@+id/button_week"
+            android:layout_width="@dimen/defImageToggleSize"
+            android:layout_height="@dimen/defImageToggleSize"
+            android:text="@string/week"
+            style="@style/Widget.Material.ToggleButton"
+            />
+
+        <android.support.v7.widget.ToggleButton
+            android:id="@+id/button_month"
+            android:layout_width="@dimen/defImageToggleSize"
+            android:layout_height="@dimen/defImageToggleSize"
+            android:text="@string/month"
+            style="@style/Widget.Material.ToggleButton"
+            />
+
+      </android.support.v7.widget.ToggleGroup>
+
+      <TextView
+          android:id="@+id/x_max"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:text=""
+          style="@style/DarkHintText"
+          />
+
+    </RelativeLayout>
+
+
+  </LinearLayout>
+
+
+  <WebView
+      android:id="@+id/web_view"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      />
+
+</LinearLayout>

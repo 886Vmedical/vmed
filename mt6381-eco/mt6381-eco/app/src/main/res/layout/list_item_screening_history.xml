@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/activity_pending"
+      android:paddingTop="@dimen/activity_pending"
+      android:gravity="center_vertical"
+      >
+
+    <TextView
+        android:id="@+id/txt_risk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/img_risk_high"
+        android:text="Low risk - 40%"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        />
+    <TextView
+        android:id="@+id/txt_timestamp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2017/07/30 12:40"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arrow_right"
+        android:src="@drawable/icon_chevron_right"
+        />
+
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@drawable/divider"
+      android:layout_alignParentBottom="true"
+      />
+</RelativeLayout>

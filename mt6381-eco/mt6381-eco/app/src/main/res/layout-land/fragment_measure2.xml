@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_vertical"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    >
+
+  <LinearLayout
+      android:id="@+id/process_view"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3.5"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      style="@style/AppTheme.Dark"
+      >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_marginTop="@dimen/activity_vertical_margin"
+          android:orientation="vertical"
+          >
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_value"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:letterSpacing="0.04"
+            android:textSize="28dp"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/txt_measure_status"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:text="@string/measure_status_checking"
+          />
+
+      <!--history-->
+      <Button
+          android:id="@+id/btn_finish"
+          android:layout_width="@dimen/button_width_small_x1"
+          android:layout_height="@dimen/button_height_mid_x0"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:text="@string/finish"
+          android:visibility="gone"
+          />
+
+      <!--Percent Ring-->
+      <com.mediatek.mt6381eco.biz.measure.view.CountdownPb
+          android:id="@+id/view_countdown"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/activity_horizontal_margin_half"
+          app:endColor="@color/white"
+          app:middleColor="@color/white"
+          app:startColor="@color/white"
+          />
+
+      <!--Percent , Status Text-->
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:id="@+id/txt_cd_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_mid_x2"
+            android:freezesText="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            style="@style/DarkHintText"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:text="@string/status_title"
+          android:textColor="@color/white"
+          style="@style/DarkHintText.Small"
+          />
+
+      <!--Cancel,Start Button-->
+      <Button
+          android:id="@+id/btn_cancel"
+          android:layout_width="@dimen/button_width_small_x1"
+          android:layout_height="@dimen/button_height_mid_x0"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin"
+          android:text="@string/cancel"
+          android:visibility="gone"
+          />
+      <Button
+          android:id="@+id/btn_start"
+          android:layout_width="@dimen/button_width_small_x1"
+          android:layout_height="@dimen/button_height_mid_x0"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:layout_marginRight="@dimen/activity_horizontal_margin"
+          android:text="@string/start"
+          android:visibility="visible"
+          />
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="6.5"
+      android:divider="@drawable/divider_horizontal"
+      android:orientation="horizontal"
+      android:showDividers="middle"
+      style="@style/MView"
+      >
+    <!--so view-->
+    <LinearLayout
+        android:id="@+id/view_so"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:divider="@drawable/divider_vertical"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+      <LinearLayout
+          android:id="@+id/so_bp"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="4"
+          android:divider="@drawable/divider_horizontal"
+          android:orientation="horizontal"
+          android:showDividers="middle"
+          >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8"
+            android:padding="@dimen/activity_horizontal_margin_quarter"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:drawableLeft="@drawable/icon_dashboard_hr"
+              android:drawablePadding="@dimen/textview_drawable_padding"
+              android:text="@string/heart_rate_title_ab"
+              />
+          <TextView
+              android:id="@+id/txt_heart_rate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="@string/empty_value"
+              android:freezesText="true"
+              android:textColor="@color/mtk_gold"
+              android:textSize="@dimen/text_small_x3"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:text="@string/bpm_text"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.1"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin_quarter"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:drawableLeft="@drawable/icon_dashboard_bp"
+              android:drawablePadding="@dimen/textview_drawable_padding"
+              android:text="@string/blood_pressure_title_ab"
+              />
+          <TextView
+              android:id="@+id/txt_blood_pressure"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="@string/empty_value"
+              android:freezesText="true"
+              android:textColor="@color/mtk_green"
+              android:textSize="@dimen/text_small_x3"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:text="@string/mmhg_text"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.1"
+            android:padding="@dimen/activity_horizontal_margin_quarter"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:drawableLeft="@drawable/icon_dashboard_spo2"
+              android:drawablePadding="@dimen/textview_drawable_padding"
+              android:text="@string/spo2_title"
+              />
+          <TextView
+              android:id="@+id/txt_spo2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="@string/empty_value"
+              android:freezesText="true"
+              android:textColor="@color/mtk_gold"
+              android:textSize="@dimen/text_small_x3"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:text="%"
+              />
+        </RelativeLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/so_hrv"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="6"
+          android:orientation="vertical"
+          android:paddingLeft="@dimen/activity_horizontal_margin_half"
+          android:paddingRight="@dimen/activity_horizontal_margin_half"
+          android:paddingTop="@dimen/activity_horizontal_margin_half"
+          android:visibility="visible"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_dashboard_hrv"
+            android:drawablePadding="@dimen/textview_drawable_padding"
+            android:text="@string/heart_rate_variability"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            >
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+
+            <com.mediatek.mt6381eco.biz.measure.view.CountdownPb
+                android:id="@+id/view_countdown_fatigue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endColor="@color/green"
+                app:middleColor="@color/gs_yellow"
+                app:startColor="@color/red"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:layout_marginTop="@dimen/activity_vertical_margin"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  >
+                <TextView
+                    android:id="@+id/txt_fatigue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_value"
+                    android:freezesText="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    />
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/activity_vertical_margin"
+                  android:gravity="center"
+                  android:text="@string/fatigue_index_wrap"
+                  />
+            </LinearLayout>
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+
+            <com.mediatek.mt6381eco.biz.measure.view.CountdownPb
+                android:id="@+id/view_countdown_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endColor="@color/green"
+                app:middleColor="@color/gs_yellow"
+                app:startColor="@color/red"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:layout_marginTop="@dimen/activity_vertical_margin"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  >
+                <TextView
+                    android:id="@+id/txt_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_value"
+                    android:freezesText="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    />
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/activity_vertical_margin"
+                  android:gravity="center"
+                  android:text="@string/pressure_index_wrap"
+                  />
+
+            </LinearLayout>
+
+          </RelativeLayout>
+
+        </LinearLayout>
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <!--chart-->
+    <LinearLayout
+        android:id="@+id/view_chart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin_half"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_dashboard_wave"
+            android:drawablePadding="@dimen/textview_drawable_padding"
+            android:text="@string/waveform"
+            />
+
+        <TextView
+            android:id="@+id/txt_ppg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/ppg2_title"
+            android:textColor="@color/ppg_color"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/txt_ppg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/ppg_title"
+            android:textColor="@color/ppg_color"
+            android:layout_toLeftOf="@id/txt_ppg2"
+            />
+
+        <TextView
+            android:id="@+id/txt_ekg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/txt_ppg"
+            android:text="@string/ecg_title"
+            android:textColor="@color/ecg_color"
+            />
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginTop="@dimen/activity_vertical_margin"
+          android:layout_weight="1.7"
+          >
+
+        <RelativeLayout
+            android:id="@+id/view_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_finger_off"
+            android:visibility="gone"
+            >
+          <TextView
+              android:id="@+id/finger_loading"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:drawablePadding="@dimen/activity_horizontal_margin"
+              android:text="@string/loading"
+              android:textColor="@color/white"
+              />
+
+        </RelativeLayout>
+
+        <com.mediatek.mt6381eco.biz.measure.view.RealTimeWaveformView
+            android:id="@+id/wave_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_play"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_pause"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_remeasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_finger_off"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/loading"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/view_finger_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_finger_off"
+            android:visibility="gone"
+            >
+          <TextView
+              android:id="@+id/txt_finger_msg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:drawableLeft="@drawable/icon_error"
+              android:drawablePadding="@dimen/activity_horizontal_margin"
+              android:text="@string/bad_signal_tips"
+              android:textColor="@color/white"
+              />
+        </RelativeLayout>
+
+
+      </RelativeLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_pending"
+    >
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_horizontal_margin_4"
+      android:contentDescription="@string/mediatek_logo"
+      android:src="@drawable/logo_mediatek_sensio2"
+      />
+
+  <TextView
+      android:id="@+id/txt_version"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_horizontal_margin_2"
+      android:text="@string/version"
+      android:textAlignment="center"
+      />
+
+  <TextView
+      android:id="@+id/txt_policy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_horizontal_margin"
+      android:text="@string/mediatek_policy_about"
+      android:textColorLink="?android:attr/textColorPrimary"
+      />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin_2"
+    android:paddingRight="@dimen/activity_horizontal_margin_2"
+    android:showDividers="end"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingBottom="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_horizontal_margin"
+      >
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/table_column_margin"
+        android:text="@string/time"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_chevron_right"
+        />
+  </RelativeLayout>
+
+</LinearLayout>

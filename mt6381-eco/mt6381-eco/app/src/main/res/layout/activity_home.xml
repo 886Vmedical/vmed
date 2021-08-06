@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="20"
+      style="@style/AppTheme.Dark"
+      >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_home_photo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_2"
+        android:layout_marginStart="33dp"
+        android:fontFamily="sans-serif-light"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+  </RelativeLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="40"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="@dimen/activity_horizontal_margin"
+      style="@style/MView"
+      >
+
+    <!--- 第一排开始   -->
+    <!--android:alpha="0.3"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:id="@+id/measure"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_measure"
+          android:gravity="center"
+          android:text="@string/measure"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+      <TextView
+          android:id="@+id/health_journal"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_health_journal"
+          android:gravity="center"
+          android:text="@string/health_journal"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+      <TextView
+          android:id="@+id/temperature"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_temperature"
+          android:gravity="center"
+          android:text="@string/temperature"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+    </LinearLayout>
+
+    <!--- 第一排结束   -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/mtk_black_hint"
+        android:alpha="0.6"
+        />
+    <!--- 第二排开始   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:drawablePadding="@dimen/activity_horizontal_margin_half"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+      <LinearLayout
+          android:id="@+id/screening"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+          <ImageView
+              android:id="@+id/img_screening"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/btn_home_screening"
+              />
+          <!--<ImageView
+              android:id="@+id/icon_lock_screen"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignEnd="@+id/img_screening"
+              android:src="@drawable/icon_lock"
+              />--><!--krestion remove lock icon 20200926 -->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_half"
+            android:gravity="center"
+            android:text="@string/screening"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+            />
+      </LinearLayout>
+
+
+      <TextView
+          android:id="@+id/consulting"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_consulting"
+          android:gravity="center"
+          android:text="@string/consulting"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+
+      <TextView
+          android:id="@+id/ranking"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_ranking"
+          android:gravity="center"
+          android:text="@string/ranking"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+    </LinearLayout>
+
+    <!--- 第二排结束  -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/mtk_black_hint"
+        android:alpha="0.6"
+        />
+    <!-- 第三排  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:drawablePadding="@dimen/activity_horizontal_margin_half"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:id="@+id/health_report"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_health_report"
+          android:gravity="center"
+          android:text="@string/health_report"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+      <TextView
+          android:id="@+id/exercise"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_exercise"
+          android:gravity="center"
+          android:text="@string/exercise"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+      <TextView
+          android:id="@+id/daily_diet"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawablePadding="@dimen/activity_horizontal_margin_half"
+          android:drawableTop="@drawable/btn_home_daily_diet"
+          android:gravity="center"
+          android:text="@string/daily_diet"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small2"
+          />
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="5"
+      android:gravity="center"
+      android:orientation="vertical"
+      style="@style/AppTheme.Dark"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measures_6_health_readings_in_60_seconds"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        />
+  </LinearLayout>
+
+</LinearLayout>

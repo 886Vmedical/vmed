@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.mediatek.mt6381eco.bt.prod",
+  "variantName": "processBluetoothReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 1305,
+      "versionName": "1.3.5-AMZN-prod",
+      "outputFile": "Vmed-v1.3.5-AMZN-prod.apk"
+    }
+  ]
+}

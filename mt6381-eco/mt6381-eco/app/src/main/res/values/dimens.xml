@@ -1,0 +1,74 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_large_x4">63sp</dimen>
+    <dimen name="text_large_x3">57sp</dimen>
+    <dimen name="text_large_x2">52sp</dimen>
+    <dimen name="text_large_x1">33sp</dimen>
+    <dimen name="text_mid_x3">42sp</dimen>
+    <dimen name="text_mid_x2">37sp</dimen>
+    <dimen name="text_mid_x1">33sp</dimen>
+    <dimen name="text_small_x3">27sp</dimen>
+    <dimen name="text_small_x2">22sp</dimen>
+    <dimen name="text_small_x1">18sp</dimen>
+    <dimen name="text_small_x0">14sp</dimen>
+    <dimen name="text_small_est">8sp</dimen>
+
+    <dimen name="icon_large_x1">100dp</dimen>
+    <dimen name="icon_mid_x1">80dp</dimen>
+    <dimen name="icon_small_x1">40dp</dimen>
+
+    <dimen name="button_height_large_x1">50dp</dimen>
+    <dimen name="button_height_mid_x0">32dp</dimen>
+    <dimen name="button_height_mid_x1">40dp</dimen>
+    <dimen name="button_height_small_x1">30dp</dimen>
+    <dimen name="button_width_large_x1">120dp</dimen>
+    <dimen name="button_width_mid_x1">100dp</dimen>
+    <dimen name="button_width_small_x1">80dp</dimen>
+
+    <dimen name="circle_stroke_size">2dp</dimen>
+
+    <!--  -->
+
+
+    <dimen name="activity_horizontal_margin_quarter">4dp</dimen>
+    <dimen name="activity_vertical_margin_quarter">4dp</dimen>
+
+    <dimen name="activity_horizontal_margin_half">8dp</dimen>
+    <dimen name="activity_vertical_margin_half">8dp</dimen>
+
+    <dimen name="activity_horizontal_margin_2">32dp</dimen>
+    <dimen name="activity_vertical_margin_2">32dp</dimen>
+
+    <dimen name="activity_horizontal_margin_3">48dp</dimen>
+    <dimen name="activity_vertical_margin_3">48dp</dimen>
+
+    <dimen name="activity_horizontal_margin_4">48dp</dimen>
+    <dimen name="activity_vertical_margin_4">48dp</dimen>
+
+    <dimen name="listView_padding_left">16dp</dimen>
+    <dimen name="listView_padding_left_half">8dp</dimen>
+    <dimen name="listView_padding_right">16dp</dimen>
+    <dimen name="listView_height">88dp</dimen>
+    <dimen name="listView_icon_width">72dp</dimen>
+
+    <dimen name="textview_drawable_padding">4dp</dimen>
+
+    <dimen name="toggle_button_height">32dp</dimen>
+    <dimen name="text_view_margin_top">34dp</dimen>
+
+
+    <dimen name="activity_pending">16dp</dimen>
+    <dimen name="min_width_profile_form">280dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="min_width_form_label">100dp</dimen>
+    <dimen name="padding_text_horizontal">4dp</dimen>
+    <dimen name="margin_photo">16dp</dimen>
+    <dimen name="table_column_margin">136dp</dimen>
+    <dimen name="text_size_small2">12sp</dimen>
+
+    <dimen name="view_measure_result_bar_height">90dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

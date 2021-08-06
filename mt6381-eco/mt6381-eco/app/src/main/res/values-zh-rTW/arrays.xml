@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <!--delete by herman string-array name="weight_unit">
+    <item>千克</item>
+    <item>斤</item>
+    <item>磅</item>
+  </string-array>
+
+  <string-array name="weight_unit_value">
+    <item>kg</item>
+    <item>jin</item>
+    <item>lb</item>
+  </string-array-->
+  <!-- Performance and power end-->
+</resources>

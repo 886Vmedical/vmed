@@ -1,0 +1,16 @@
+android {
+  flavorDimensions "feature"
+  productFlavors {
+    sensor {
+      dimension "feature"
+      versionNameSuffix '-sensor'
+      applicationIdSuffix '.sensor'
+    }
+
+    bluetooth {
+      dimension "feature"
+      versionNameSuffix '-AMZN'
+      applicationIdSuffix '.bt'
+    }
+  }
+}

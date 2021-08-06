@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_pending"
+    >
+
+
+  <LinearLayout
+      android:id="@+id/layout_verfform"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:divider="@drawable/divider"
+      android:minWidth="@dimen/min_width_profile_form"
+      android:orientation="vertical"
+      android:padding="@dimen/activity_pending"
+      android:showDividers="end|middle"
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <TextView
+          android:id="@+id/label_maccount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableStart="@drawable/icon_list_account"
+          android:labelFor="@+id/edt_maccount"
+          android:text="@string/account"
+          style="@style/FormLabel"
+
+          />
+      <EditText
+          android:id="@+id/edt_maccount"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/label_maccount"
+          android:layout_alignTop="@+id/label_maccount"
+          android:layout_toEndOf="@+id/label_maccount"
+          android:hint="@string/hint_maccount"
+          android:imeOptions="actionNext"
+          android:maxLength="50"
+          style="@style/FormEdit"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <TextView
+          android:id="@+id/label_mpassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableStart="@drawable/icon_list_password"
+          android:labelFor="@+id/edt_mpassword"
+          android:text="@string/password"
+          style="@style/FormLabel"
+          />
+      <EditText
+          android:id="@+id/edt_mpassword"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/label_mpassword"
+          android:layout_alignTop="@+id/label_mpassword"
+          android:layout_toEndOf="@+id/label_mpassword"
+          android:imeOptions="actionDone"
+          android:inputType="textPassword"
+          android:hint="@string/hint_mpassword"
+          android:maxLength="50"
+          style="@style/FormEdit"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignLeft="@+id/edt_mpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <EditText
+          android:id="@+id/verif_code"
+          style="@style/FormEdit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:hint="@string/hint_vertification"
+          android:layout_alignTop="@+id/send_verification"
+          android:layout_alignBottom="@+id/send_verification"
+          android:imeOptions="actionDone"
+          android:maxLength="50" />
+
+      <Button
+          android:id="@+id/send_verification"
+          style="@style/MButton.Inverse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="8dp"
+          android:text="@string/ver_text" />
+    </RelativeLayout>
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="16dp"
+      />
+  <Button
+      android:id="@+id/btn_next"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/next"
+      style="@style/MButton.Inverse"
+      />
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LockedOrientationActivity"
+    package="com.mediatek.mt6381eco">
+
+    <application
+        android:name=".MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        >
+
+        <!-- redstone user-library start-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- redstone user-library end-->
+
+        <activity
+            android:name=".biz.splash.VmedSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".biz.startup.StartupActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".biz.profile.ProfileActivity"
+            android:label="@string/profile_text"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".biz.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".biz.measure.ready.MeasureReadyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/measure_ready_title" />
+        <activity
+            android:name=".biz.measure.result.MeasureResultActivity"
+            android:label="@string/measure_result" />
+        <activity
+            android:name=".biz.history.HistoryFeatureListActivity"
+            android:label="@string/health_journal"
+            android:screenOrientation="portrait" />
+        <activity android:name=".biz.webView.WebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.mediatek.webView"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".biz.webView.HealthWeatherActivity"
+            android:label="@string/health_weather_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".biz.webView.MarketplaceActivity"
+            android:label="@string/marketplace_label"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".biz.webView.ExerciseViewActivity"
+            android:label="@string/exercise_view_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".biz.webView.DailyDietActivity"
+            android:label="@string/daily_diet_label"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".biz.history.HRSpO2HistoryActivity"
+            android:label="@string/hr_spo2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.history.HRVHistoryActivity"
+            android:label="@string/hrv"
+            android:screenOrientation="portrait" /> <!-- krestin add brv and temp menu in result history start -->
+        <activity
+            android:name=".biz.history.BRVHistoryActivity"
+            android:label="@string/brv"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.history.TEMPHistoryActivity"
+            android:label="@string/temperature"
+            android:screenOrientation="portrait" /> <!-- krestin add brv and temp menu in result history end -->
+        <activity
+            android:name=".biz.history.BPHistoryActivity"
+            android:label="@string/bp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.history.LocalTempHistoryActivity"
+            android:label="@string/local_temp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.history.OfflineRecordActivity"
+            android:label="@string/offline_record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.historyrecord.HistoryRecordActivity"
+            android:label="@string/measure_record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.screening.ScreeningActivity"
+            android:label="@string/screening"
+            android:screenOrientation="portrait" />
+        <activity android:name=".biz.recorddetail.RecordDetailActivity" />
+        <activity
+            android:name=".ui.ContainerActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".biz.measure.MeasureActivity"
+            android:theme="@style/AppTheme.Dark.Fullscreen" />
+
+        <activity
+            android:name=".biz.calibration.CalibrationActivity"
+            android:theme="@style/AppTheme.Dark.Fullscreen" />
+        <activity
+            android:name=".biz.calibration.CalibrateGoldenActivity"
+            android:label="@string/input_golden" />
+        <activity
+            android:name=".biz.calibration.CalibrateSuccessActivity"
+            android:label="@string/success_tips" />
+        <activity
+            android:name=".biz.calibration.CalibrateSuccess2MeasureActivity"
+            android:label="@string/success_tips" />
+        <activity
+            android:name=".biz.about.AboutActivity"
+            android:label="@string/about" />
+        <activity
+            android:name=".biz.home.SystemUpdateActivity"
+            android:label="@string/upgrade"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".biz.home.ConsultingActivity"
+            android:label="@string/consulting" />
+        <activity
+            android:name=".biz.home.RankingActivity"
+            android:label="@string/ranking" />
+        <activity
+            android:name=".biz.home.HealthReportActivity"
+            android:label="@string/health_report" />
+        <activity
+            android:name=".biz.home.ExerciseActivity"
+            android:label="@string/exercise" />
+        <activity
+            android:name=".biz.home.DietActivity"
+            android:label="@string/daily_diet" />
+        <activity
+            android:name=".biz.temp.TemperatureActivity"
+            android:label="@string/temperature"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".biz.temp.CountDownActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".biz.temp.SettingsActivity"
+            android:label="@string/temp_settings">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".biz.account.MailSignatureActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".biz.account.PasswordOption"
+                  android:screenOrientation="portrait"/>
+
+        <receiver android:name=".biz.profile.MedicineTimeAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.mediatek.mt6381eco.biz.profile.MEDICINE_TIME_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".biz.peripheral.PeripheralService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mediatek.mt6381eco.bt.prod.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepath"
+            tools:replace="android:resource"
+            />
+        </provider>
+    </application>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+</manifest>

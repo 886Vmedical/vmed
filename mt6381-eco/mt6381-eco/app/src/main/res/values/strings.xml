@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="mediatek_policy">Vmed is designed as a guideline for personal health and exercise. It is strictly NOT to be used for medical evaluation.
+		\nBy clicking "Continue", you agree to the Vmed
+    <a href="com.mediatek.webView:///android_asset/htmls/terms_conditions_EN.html">Terms &amp; Conditions</a> and
+		<a href="com.mediatek.webView:///android_asset/htmls/privacy_policy_EN.html">Privacy Policy</a>.</string>
+    <string name="mediatek_policy_about">
+    <a href="com.mediatek.webView:///android_asset/htmls/terms_conditions_EN.html">Terms &amp; Conditions</a> and
+		<a href="com.mediatek.webView:///android_asset/htmls/privacy_policy_EN.html">Privacy Policy</a></string>
+    <string name="measure_ready_subtitle">Place your fingertips on the two sensor areas \nIf you wish to hold the phone horizontally, please turn it counterclockwise.</string>
+    <string name="fatigue_index_wrap">Fatigue\nIndex</string>
+    <string name="pressure_index_wrap">Pressure\nIndex</string>
+    <string name="input_golden">Input your known data</string>
+    <string name="measure_ready_subtitle_horizontal">Place your fingertips on the two sensor areas \n\nPlease make sure the cameras are on the left side.</string>
+    <string name="no_data">We\'ve got no data!</string>
+    <string name="no_chart_data">We\'ve got no chart data!</string>
+    <string name="screening_education_content">Electrocardiography (ECG) is the process of recording the electrical activity of the heart over a period of time using electrodes placed on the skin. These electrodes detect the tiny electrical changes on the skin that arise from the heart muscle\'s electrophysiologic pattern during each heartbeat. An ECG can be used to measure the rate and rhythm of heartbeats, the size and position of the heart chambers.</string>
+    <string name="measure_status_measure">Please wait, we\'re measuring your stats!</string>
+    <string name="test_throughput_error">Oh dear! We\'ve failed to test throughput correctly</string>
+    <string name="error_network_maybe_unavailable">Can\'t connect to server</string>
+    <string name="empty_value">--</string>
+    <string name="empty_value_pair">--/--</string>
+    <string name="spo2_education_content">SpO2 is an estimated value of blood oxygen level, which is normally between 95%% &#126; 100%%. When the SpO2 value is too low, this can imply respiratory or circulation system issues.</string>
+    <string name="calibrate_success_to_calibrate">Hi %1$s.\nCalibration is complete and the data saved into your personal file.\nDo you want to try calibration again?</string>
+    <string name="calibrate_success_to_measure">Hi %1$s.\nYou\'ve completed calibration.\nYour future measurements will use this personal calibration data.\nNext, lets try taking some health measurements</string>
+    <string name="validate_number_range_invalid">Please add a value between [%1$d - %2$d]</string>
+    <string name="app_version">v%1$s</string>
+    <string name="all_version">%1$s, %2$s, %3$s, %4$s, %5$s</string>
+    <string name="throughput_warning_formatter">Throughput is %1$.2f Kb/s.\n
+  Your device is far away from phone or the environment is poor, Recommend that move the device closer.</string>
+    <string name="measure_result_info">Hi %1$s,\nComparison data is generated based on people of same gender, age and BMI</string>
+    <string name="abnormal_formatter">%1$d%%</string>
+    <string name="screening_error_formatter">Fail to loadData (%1$s) - touch to retry</string>
+    <string name="load_more_error">Fail to loadData (%1$s) - touch to retry</string>
+    <string name="error_network_unexpected">An unexpected error has occurred (%1$s)</string>
+    <string name="wave_form_duration" formatted="false">%1$.2f&#126;%2$.2fs</string>
+    <string name="blood_pressure_formatter">%1$d/%2$d</string>
+    <string name="error_scan_fail">Failed to start scan(%1$s)</string>
+    <string name="error_peripheral_communicate">Failed to communicate with device(%1$s)</string>
+    <string name="error_peripheral_connect">Failed to connect with device(%1$s)</string>
+    <string name="error_peripheral_disconnect">Failed to disconnect with device(%1$s)</string>
+    <string name="error_throughput">Test throughput error(%1$s)</string>
+    <string name="percentage_formatter">%1$d/100</string>
+    <string name="percentage_formatter_abbr">%1$d%%</string>
+    <string name="formatter_downloading">Downloading %1$.1f%%</string>
+    <string name="formatter_installing">Installing %1$.1f%%</string>
+    <string name="formatter_firmware_available">(%1$s is available)</string>
+    <string name="app_name">Vmed</string>
+    <string name="measure">Measure</string>
+    <string name="health_journal">Health History</string>
+    <string name="screening">Health Weather</string>
+    <string name="consulting">Consulting</string>
+    <string name="ranking">Ranking</string>
+    <string name="health_report">Marketplace</string>
+    <string name="exercise">Exercise</string>
+    <string name="daily_diet">Daily Diet</string>
+
+    <string name="health_weather_label">Health Weather</string>
+    <string name="marketplace_label">Marketplace</string>
+    <string name="exercise_view_label">Exercise</string>
+    <string name="daily_diet_label">Daily Diet</string>
+
+    <string name="measures_6_health_readings_in_60_seconds">Measure 10 health stats in 10-60 seconds</string>
+    <string name="measure_ready_title">Ready to Measure</string>
+    <string name="waveform">Waveform</string>
+    <string name="heart_rate_title">Heart Rate</string>
+    <string name="blood_pressure_title">Blood Pressure</string>
+    <string name="blood_pressure_title_ab">BP</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="cancel_measure_tips">Are you sure you want to cancel?</string>
+    <string name="measure_interrupt_no">No</string>
+    <string name="measure_interrupt_yes">Yes</string>
+    <string name="measure_interrupt_title">Measurement stopped</string>
+    <string name="measure_interrupt_msg">An accurate reading cannot be recorded. Please replace your fingertips on the correct areas.</string>
+    <string name="bp_measure_exception_title">Measurement Error</string>
+    <string name="bp_measure_exception_msg">Blood Pressure result: %1$s.\n\nTry again?</string>
+    <string name="bad_signal_tips">An accurate reading cannot be recorded. Please place your fingertips on the correct areas. Try again?</string>
+    <string name="status_title">Progress</string>
+    <string name="heart_rate_title_ab">Heart Rate</string>
+    <string name="heart_rate_variability">Heart Rate Variability</string>
+    <string name="ppg_title">PPG</string>
+    <string name="ppg2_title">PPG2</string>
+    <string name="ecg_title">ECG</string>
+    <string name="bpm_text">bpm</string>
+    <string name="mmhg_text">mmHg</string>
+    <string name="measure_result">Measurement Result</string>
+    <string name="systolic_title">Systolic</string>
+    <string name="diastolic_title">Diastolic</string>
+    <string name="spo2_title">SpO2</string>
+    <string name="brv_title">BR</string>
+    <string name="temp_title">Temperature</string>
+    <string name="temp_string_data">Not measured</string>
+    <string name="default_no_measure">Not measured</string>
+    <string name="fatigue_index">Fatigue Index</string>
+    <string name="pressure_index">Pressure Index</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="pressure">Pressure</string>
+    <string name="nav_calibrate1">If this result looks inaccurate please click to calibrate, </string>
+    <string name="nav_calibrate2">aligning the settings to you.</string>
+    <string name="normal">&#60;10</string>
+    <string name="abnormal">&#62;10</string>
+    <string name="input_golden_again">Input your known data again</string>
+    <string name="ready_to_calibration">Ready to Calibrate</string>
+    <string name="cancel_calibrate">Are you sure to cancel calibration?</string>
+    <string name="calibrate_interrupted">Calibration stopped</string>
+    <string name="calibrate_error">An accurate reading cannot be recorded. Please place your fingertips on the correct areas. Try again?</string>
+    <string name="success_tips">Success!</string>
+    <string name="hr_spo2">Heart Rate / SpO2</string>
+    <string name="hrv">Heart Rate Variability</string>
+    <string name="brv">Breathing Rate</string>
+    <string name="bp">Blood Pressure</string>
+    <string name="local_temp">Guest Temperature Records</string>
+    <string name="offline_record">Guest Measure Records</string>
+    <string name="measure_record">Your Records</string>
+    <string name="normal_area">Normal Area</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="high">high</string>
+    <string name="low">low</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="loading">Loading…</string>
+    <string name="invalid_value">Please add a value</string>
+    <string name="validate_required_invalid">Please add a value</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="finish">Finish</string>
+    <string name="again">Again</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="height_title">Height</string>
+    <string name="unit_cm">cm</string>
+    <string name="weight_title">Weight</string>
+    <string name="profile_text">Profile</string>
+    <string name="connect_internet_tips">Please connect to the internet for further analysis</string>
+    <string name="sign_in">Sign In</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="sign_out">Sign out</string>
+    <string name="nick_name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="birthday">Birthday</string>
+    <string name="weight">Weight</string>
+    <string name="photo">Photo</string>
+    <string name="complete">Complete</string>
+    <string name="password_find">Forget password</string>
+    <string name="password_reset">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="newpd_hint">Please input your new password</string>
+    <string name="conpd_hint">Please confirm to input the new password</string>
+
+    <string name="app_default"></string>
+    <string name="latest_version">It is currently the latest version!</string>
+    <string name="version_check">Check new version</string>
+    <string name="str_checking">Checking...</string>
+    <string name="str_install">Install</string>
+    <string name="has_new_version">One new version of application detected</string>
+    <string name="new_version_checked">A new version has been detected</string>
+    <string name="install_attention">Do you want to update to new version now?</string>
+    <string name="installing">Installing...</string>
+    <string name="install_success">Install Successfully!</string>
+    <string name="pre_installing">Preparing to install...</string>
+
+    <string name="mediatek_logo">Vmed Logo</string>
+    <string name="invalid_data_format">Invalid date format</string>
+    <string name="error_nick_name_required">A Name is required</string>
+    <string name="error_gender_required">Gender is required</string>
+    <string name="error_birthday_required">Birthday is required</string>
+    <string name="error_height_required">Height is required</string>
+    <string name="error_weight_required">Weight is required</string>
+    <string name="saving">Saving</string>
+    <string name="save">Save</string>
+    <string name="searching_for_device">Searching for device</string>
+    <string name="refresh">Refresh</string>
+    <string name="skip">Skip</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting</string>
+    <string name="throughput">Throughput</string>
+    <string name="slow_throughput">Throughput is too slow</string>
+    <string name="continue_to_next">Continue to next step</string>
+    <string name="connection_lost">The Bluetooth connection has been lost, please connect Bluetooth first.</string>
+    <string name="temperature">Thermometer</string>
+    <!--krestin add covid-19 string start-->
+    <string name="current_data">Current measure results</string>
+    <string name="string_temp">Temperature</string>
+    <string name="string_localtemp">Guest Temperature Record</string>
+    <string name="temperature_default">97.7</string>
+    <string name="brv_default">17</string>
+    <string name="spo2_default">98%</string>
+    <string name="string_spo2">SpO2</string>
+    <string name="string_brv">BR</string>
+    <string name="string_covidText">Have you completed the \"Thermometer\" and \"Measure\" tests?</string>
+    <string name="string_toast">Please complete the \"Thermometer\" and \"Measure\" tests before you continue</string>
+    <string name="string_covidRemind">REMINDER:\n\nIf your body temperature is higher than 100 degrees Fahrenheit, blood oxygen saturation is lower than 87%, and your breathing rate exceeds the range of 12-20, you may be at risk of new coronavirus, please see a doctor immediately for examination.</string>
+    <!--krestin add covid-19 string end-->
+    <string name="temperatureInfo">Current Body Temperature</string>
+    <string name="temperature_degrees">Degrees F</string>
+    <string name="temperatureTitle">Current Body Temperature: </string>
+    <string name="virusPrompt">Your body temperature is high and you are at risk of COVID-19. It is recommended to go to the hospital for review.</string>
+    <string name="profile">Profile</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="about">About</string>
+    <string name="arrow_right">Arrow right</string>
+    <string name="heart_rate_risk">% of Irregular Heart Activity</string>
+
+    <string name="recent_history">Recent History</string>
+    <string name="health_education">Health Education</string>
+    <string name="no_risk_formatter">&#60;10%%</string>
+    <string name="screening_education_title">Interpretation of the Electrocardiogram</string>
+    <string name="end">End of Records</string>
+    <string name="connect_exception">Bluetooth Connection Failed. Please exit and try it again</string>
+    <string name="unknown_error">An unknown error has occurred</string>
+    <string name="create_an_account">Create Account</string>
+    <string name="i_am_a_guest">Offline Mode</string>
+    <string name="continue_sign_in">Continue</string>
+    <string name="hint_account">At least 4 Characters</string>
+    <string name="hint_password">At least 8 Characters</string>
+    <string name="hint_maccount">Phone number/Email account</string>
+    <string name="hint_mpassword">Please enter your password</string>
+    <string name="hint_vertification">Enter verification code</string>
+    <string name="ver_text">Get verification code</string>
+    <string name="ver_timer_text">Resend</string>
+    <string name="ver_second">s</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="attention">Attention!</string>
+    <string name="guest_create_account_success_tip">Your personal account had been created. The data from the guest account has been integrated into it</string>
+    <string name="guest">Guest</string>
+    <string name="connected">Already connected</string>
+    <string name="confirm_connected">Disconnect Device or Continue</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="remote_this_device">Disconnect Bluetooth</string>
+    <string name="power">Power</string>
+    <string name="synced">Device Synced</string>
+    <string name="version">Version</string>
+    <string name="up_to_date">Up to date</string>
+    <string name="device_name">Device Name</string>
+    <string name="error_network_unavailable">The network is unavailable</string>
+    <string name="hr_risk">% of Irregular Heart Activity</string>
+    <string name="error_fail_to_enable_bluetooth">Failed to enable Bluetooth connection</string>
+    <string name="error_peripheral_connection_lost">The connection has been lost</string>
+    <string name="downgrade">Downgrade</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="alert_screen_purchase_confirm1">The pre-screening function requires subscription.</string>
+    <string name="alert_screen_purchase_confirm2">Continue to purchase?</string>
+    <string name="waiting">Wait just a second…</string>
+    <string name="token_invalid_need_re_login">Please login again</string>
+    <string name="relogin">Login again</string>
+    <string name="hr_education_title">Heart Rate (HR)</string>
+    <string name="hr_education_content">The HR value is represented by beats per minute (bpm). When resting, a normal HR range is between 50 to 100bpm. When doing exercise, your HR increases. For people with better physical fitness, the typical HR is lower when resting and exercising. As people become elderly, the maximum HR range also decreases.</string>
+    <string name="spo2_education_title">Peripheral (Capillary) Oxygen Saturation (SpO2)</string>
+    <string name="bp_education_title">Blood pressure</string>
+    <string name="bp_education_content">Blood Pressure (BP) is the pressure exerted on the walls of blood vessels by the circulating blood. It is usually expressed in terms of the systolic pressure (maximum during one heart beat) over diastolic pressure (minimum in between two heart beats). Typical resting Blood Pressure in an adult is approximately 120 millimeters of mercury systolic, and 80 millimeters of mercury diastolic; represented as 120/80 mmHg. Systolic and diastolic arterial blood pressures are not static but undergo natural variations from one heartbeat to another and throughout the day. They change in response to stress, nutritional factors, caffiene, drugs, disease, and exercise.</string>
+    <string name="hrv_education_title">Heart rate variability (HRV)</string>
+    <string name="hrv_education_content">The Heart Rate interval variations present at rest represent beat-by-beat variations in cardiac autonomic inputs.</string>
+    <!--krestin add brv menu string start-->
+    <string name="brv_education_title">Breathing rate (BR)</string>
+    <string name="brv_education_content">The Breathing Rate interval variations present at rest represent beat-by-beat variations in cardiac autonomic inputs.</string>
+    <string name="exception_retest">Please adjust the measurement posture and take the measurement again</string>
+    <!--krestin add brv menu string end-->
+    <string name="create_account">Create Account</string>
+    <string name="create_account_success">Success!</string>
+    <string name="measure_status_checking">Checking…</string>
+    <string name="measure_status_measuring">Measuring…</string>
+    <string name="measure_status_interrupted">Interrupted</string>
+    <string name="measure_status_completed">Completed</string>
+    <string name="ekg">ECG</string>
+    <string name="ppg">PPG</string>
+    <string name="quality">Quality</string>
+    <string name="exit">Exit</string>
+    <string name="uploading">Uploading…</string>
+    <string name="bp_category_hypotension">Hypo-\ntension</string>
+    <string name="bp_category_normal">Normal</string>
+    <string name="bp_category_pre_hypertension">Prehypertension</string>
+    <string name="bp_category_hypertension">Hypertension</string>
+    <string name="hr_category_lower">&#60;60</string>
+    <string name="hr_category_normal">60~100</string>
+    <string name="hr_category_higher">&#62;100</string>
+    <string name="spo2_category_danger">&#60;85</string>
+    <string name="spo2_category_lower">85~94</string>
+    <string name="spo2_category_normal">&#62;94</string>
+    <!-- krestin add brv data range start -->
+    <string name="brv_category_danger">&#60;12</string>
+    <string name="brv_category_lower">12~20</string>
+    <string name="brv_category_normal">&#62;20</string>
+    <!-- krestin add brv data range end -->
+    <!-- krestin add temp data range start -->
+    <string name="temp_category_danger">&#60;35</string>
+    <string name="temp_category_lower">35~38</string>
+    <string name="temp_category_normal">&#62;38</string>
+    <!-- krestin add temp data range end -->
+    <string name="fatigue_category_good">&#60;30</string>
+    <string name="fatigue_category_tired">30~70</string>
+    <string name="fatigue_category_overworked">&#62;70</string>
+    <string name="pressure_category_good">&#60;30</string>
+    <string name="pressure_category_nervous">30~70</string>
+    <string name="pressure_category_breakdown">&#62;70</string>
+    <string name="hrrisk_category_normal">&#60;10</string>
+    <string name="hrrisk_category_low_risk">10~20</string>
+    <string name="hrrisk_category_high_risk">&#62;20</string>
+    <string name="error_start_measure_fail">Failed to start measure</string>
+
+    <string name="slow_throughput_continue_exit">Bluetooth throughput is too slow to measure accurate result. Continue to measure?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="guest_attention_first_time">Guest account records are only kept for two weeks. If you switch to another device or delete this app you will lose your accumilated records. Are you sure you want to use a guest account?</string>
+    <string name="guest_attention">Guest account records are only kept for two weeks. If you switch to another device or delete this app you will lose your accumilated records. Do you want to create a personal account to retain the data you have already collected?</string>
+    <string name="meet_an_error">The Bluetooth connection has been lost. Please try to reconnect the device to measure.</string>
+  <!--- herman for temp-->
+  <!--string name="device_info">Device Info</string>-->
+    <string name="device_info">Device Info</string>
+    <string name="edit_device_name">Edit Device Name</string>
+    <string name="install">Install</string>
+    <string name="download">Download</string>
+    <string name="fota_success">New firmware has been installed, please reconnect device.</string>
+    <string name="ready_to_install">Ready to install</string>
+    <string name="content_fota_install">DO NOT quit ths app during the installation. All features will be unavailable once started.</string>
+    <string name="checking_new_fw">(Checking new Firmware…)</string>
+    <string name="error_measurement_interrupted">Measurement is interrupted</string>
+    <string name="timeout">Timeout</string>
+    <string name="personal_status_hint">Are you taking blood pressure medicine?</string>
+    <string name="default_select">Select</string>
+    <string name="personal_status_none">None</string>
+    <string name="personal_status_hypertension">Hypertension</string>
+    <string name="personal_status_hypotension">Hypotension</string>
+    <string name="error_personal_status_required">Personal status is required</string>
+    <string name="take_medicine_time_hint">Take time</string>
+    <string name="clear">Clear</string>
+    <string name="no_medicine_choice">please select your medicine time,then continue...</string>
+    <string name="error_measurement_aborted">Measurement is aborted</string>
+    <string name="calibrated">Calibrated</string>
+    <string name="delete_calibration">Delete Calibration</string>
+    <string name="signal_finger_off_ecg">Finger_ECG</string>
+    <string name="signal_finger_off_ppg">Finger_PPG</string>
+    <string name="signal_quality_low_ecg">Quality_ECG</string>
+    <string name="signal_quality_low_ppg">Quality_PPG</string>
+    <string name="signal_quality_low_ppg2">Quality_PPG2</string>
+    <string name="down_sample">Down sample</string>
+
+    <string name="meal_advice_title">Meal advice</string>
+    <string name="meals">Meals</string>
+    <string name="bmi">BMI : 22</string>
+    <string name="basal_metabolism">BMR- Basal Metabolism Rate (cal) : 1385 cal</string>
+    <string name="lunch_calories">Lunch calories(cal) : 665 cal</string>
+
+    <string name="grain">Grain</string>
+    <string name="egg_meat">Proteins</string>
+    <string name="grease">Oils</string>
+    <string name="fruits">Fruits</string>
+    <string name="vegetables">Vegetables</string>
+
+    <string name="yanmai">A bowl of oats</string>
+    <string name="yarou">One portion of protein</string>
+    <string name="peigen">50 grams of healthy oils</string>
+    <string name="fruits_category">50 grams of fruit</string>
+    <string name="xiaofanqie">One small tomato (23 pieces)</string>
+    <string name="bocai">100g spinach</string>
+
+
+  <string name="consulting_txt">Use dialogue methods to inquire about the occurrence, development, current symptoms, treatment history of the disease from patients, and their insiders to diagnose the disease.</string>
+  <string name="ranking_txt">According to big data analysis, combined with your health, your health is ranked 101th for the people we observed.</string>
+  <string name="health_txt">Through big data analysis of your health, you are currently in good health.</string>
+  <string name="exercise_txt">Exercise every day, which helps relieve work fatigue, improve body metabolism, and promote blood circulation, which is very beneficial to health.</string>
+  <string name="deit_txt">People should eat four types of food at least every day: grains, fruits and vegetables, milk, and meat.</string>
+
+  <string name="temperature_attention">It is recommended that you measure your body temperature first.</string>
+  <string name="temperature_attention2">Please click on the Bluetooth icon at the top right of this page to take body temperature.</string>
+  <string name="temperature_attention3">Hold top of Vmed IR sensor 2"- 6" inches from face or skin to detect temperature.</string>
+
+  <string name="journal_attention">See your current health records here and any health concern notifications.</string>
+
+  <string name="backToHome">Back to Measure Page</string>
+  <string name="ok2">Okay</string>
+  <string name="temp_measuring">Measuring</string>
+  <string name="temp_settings">Temperature Settings</string>
+  <string name="temp_out_of_range">The test environment is beyond the range of the device itself</string>
+  <string name="temp_remeasure">Please remeasure</string>
+
+  <string name="physicalMode">Currently in physical key mode.</string>
+  <string name="virtualMode">Currently in virtual key mode.</string>
+  <string name="switchMethod">Switch</string>
+  <string name="clicktotest">Click for Temp</string>
+  <string name="clicktoCalibration">Calibration</string>
+  <string name="wait_temperature">Temperature is being measured, please wait...</string>
+  <string name="temperature_calibration">Calibrating, please wait...</string>
+
+
+  <string name="countdown">Count Down</string>
+
+  <string name="medtimeTitle">Medication Reminder</string>
+  <string name="medtimeContent">Your blood pressure medication time:\n</string>
+  <string name="medstickTitle">You have one new notification</string>
+  <string name="medtimeContentExtra">\nPlease take your medicine on time.</string>
+
+  <string name="outOfYearString">Tip: year selection cannot be grater than 2020.</string>
+
+  <string name="power_low_warning">Vmed device power is low, please charge in time</string>
+
+  <string name="vmed_location_attention">Vmed Bluetooth must enable the location permission, otherwise the Bluetooth device cannot be searched. Do you want to enable the permission?</string>
+
+  <string name="kg" translatable="false">kg</string>
+  <string name="jin" translatable="false">jin</string>
+  <string name="lb" translatable="false">lb</string>
+  <string name="cm" translatable="false">cm</string>
+  <string name="inch" translatable="false">inch</string>
+  <string name="unit_warning">Height unit is inch only for American language, and cm for Chinese language.</string>
+
+  <string name="permission_user_attention">To ensure that Vmed can run normally, please go to the system settings to open all the required permissions for Vmed</string>
+
+  <string name="go_to_setting">Go to settings</string>
+
+  <string name="bp_warning">Fingers and sensors must be clean and dry, and lightly press on the sensors to measure.</string>
+
+  <string name="text_account_attention">Account cannot be less than 4 characters</string>
+  <string name="text_short_attention">Password cannot be less than 8 characters</string>
+
+  <string name="attention_save">Personal profile is not saved, do you want to give up this editing?</string>
+  <string name="attention_fill_info">Personal profile is incomplete, do you want to give up this editing?</string>
+
+  <string name="device_name_save">Device information is not saved, do you want to give up this editing?</string>
+  <string name="device_null">Device name cannot be less than 6 characters.</string>
+
+</resources>

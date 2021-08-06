@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="gender_label">
+    <item>@string/male</item>
+    <item>@string/female</item>
+  </string-array>
+  <!--krestin add array list to display inch in height start -->
+  <string-array name="height_units">
+    <item>@string/cm</item>
+    <item>@string/inch</item>
+  </string-array>
+  <!--krestin add array list to display inch in height end -->
+  <string-array name="weight_units">
+    <item>@string/kg</item>
+    <item>@string/jin</item>
+    <item>@string/lb</item>
+  </string-array>
+
+  <integer-array name="personal_status">
+    <item>@string/personal_status_none</item>
+    <item>@string/personal_status_hypertension</item>
+    <item>@string/personal_status_hypotension</item>
+  </integer-array>
+
+  <string-array name="heart_rate_text_map">
+    <item>@string/no_risk_formatter</item>
+    <item>@string/abnormal_formatter</item>
+    <item>@string/abnormal_formatter</item>
+  </string-array>
+
+  <integer-array name="hrBarColors">
+    <item>@color/gs_blue</item>
+    <item>@color/eb_green</item>
+    <item>@color/eb_orange</item>
+  </integer-array>
+
+  <integer-array name="hrBarTitles">
+    <item>@string/hr_category_lower</item>
+    <item>@string/hr_category_normal</item>
+    <item>@string/hr_category_higher</item>
+  </integer-array>
+
+  <integer-array name="hrBarAxisXLabels">
+    <item>20</item>
+    <item>60</item>
+    <item>100</item>
+    <item>140</item>
+  </integer-array>
+
+  <integer-array name="spo2BarColors">
+    <item>@color/eb_red</item>
+    <item>@color/eb_orange</item>
+    <item>@color/eb_green</item>
+  </integer-array>
+
+  <integer-array name="brvBarColors">
+    <item>@color/eb_red</item>
+    <item>@color/eb_green</item>
+    <item>@color/gs_blue</item>
+  </integer-array>
+  <!--krestin remove temp bar start-->
+  <!--<integer-array name="tempBarColors">
+    <item>@color/gs_blue</item>
+    <item>@color/eb_green</item>
+    <item>@color/eb_red</item>
+  </integer-array>-->
+  <!--krestin remove temp bar end-->
+  <integer-array name="spo2BarTitles">
+    <item>@string/spo2_category_danger</item>
+    <item>@string/spo2_category_lower</item>
+    <item>@string/spo2_category_normal</item>
+  </integer-array>
+
+  <integer-array name="brvBarTitles">
+    <item>@string/brv_category_danger</item>
+    <item>@string/brv_category_lower</item>
+    <item>@string/brv_category_normal</item>
+  </integer-array>
+ <!--krestin remove temp bar start-->
+  <!--<integer-array name="tempBarTitles">
+    <item>@string/temp_category_danger</item>
+    <item>@string/temp_category_lower</item>
+    <item>@string/temp_category_normal</item>
+  </integer-array>-->
+  <!--krestin remove temp bar end-->
+  <integer-array name="spo2BarAxisXLabels">
+    <item>75</item>
+    <item>85</item>
+    <item>94</item>
+    <item>100</item>
+  </integer-array>
+
+  <integer-array name="brvBarAxisXLabels">
+    <item>0</item>
+    <item>12</item>
+    <item>20</item>
+    <item>40</item>
+  </integer-array>
+  <!--krestin remove temp bar start-->
+  <!--<integer-array name="tempBarAxisXLabels">
+    <item>10</item>
+    <item>35</item>
+    <item>38</item>
+    <item>43</item>
+  </integer-array>-->
+  <!--krestin remove temp bar end-->
+
+  <integer-array name="fatigueBarColors">
+    <item>@color/eb_green</item>
+    <item>@color/eb_orange</item>
+    <item>@color/eb_red</item>
+  </integer-array>
+
+  <integer-array name="fatigueBarTitles">
+    <item>@string/fatigue_category_good</item>
+    <item>@string/fatigue_category_tired</item>
+    <item>@string/fatigue_category_overworked</item>
+  </integer-array>
+
+  <integer-array name="fatigueBarAxisXLabels">
+    <item>0</item>
+    <item>30</item>
+    <item>70</item>
+    <item>100</item>
+  </integer-array>
+
+  <integer-array name="pressureBarTitles">
+    <item>@string/pressure_category_good</item>
+    <item>@string/pressure_category_nervous</item>
+    <item>@string/pressure_category_breakdown</item>
+  </integer-array>
+
+  <integer-array name="hrRiskBarTitles">
+    <item>@string/hrrisk_category_normal</item>
+    <item>@string/hrrisk_category_low_risk</item>
+    <item>@string/hrrisk_category_high_risk</item>
+  </integer-array>
+
+  <integer-array name="hrRiskBarAxisXLabels">
+    <item>0</item>
+    <item>10</item>
+    <item>20</item>
+    <item>50</item>
+  </integer-array>
+
+</resources>

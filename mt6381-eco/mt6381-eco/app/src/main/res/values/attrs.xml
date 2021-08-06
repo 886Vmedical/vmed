@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="appTheme">
+    <attr format="reference" name="textAppearanceBody1"/>
+    <attr format="reference" name="textAppearanceBody2"/>
+    <attr format="reference" name="textAppearanceCaption"/>
+    <attr format="reference" name="textAppearanceDisplay1"/>
+    <attr format="reference" name="textAppearanceDisplay2"/>
+    <attr format="reference" name="textAppearanceDisplay3"/>
+    <attr format="reference" name="textAppearanceDisplay4"/>
+    <attr format="reference" name="textAppearanceHeadline"/>
+
+    <attr format="reference" name="textAppearance"/>
+    <attr format="reference" name="textAppearanceInverse"/>
+    <attr format="reference" name="textAppearanceLarge"/>
+    <attr format="reference" name="textAppearanceLargeInverse"/>
+    <attr format="reference" name="textAppearanceMedium"/>
+    <attr format="reference" name="textAppearanceMediumInverse"/>
+    <attr format="reference" name="textAppearanceSmall"/>
+    <attr format="reference" name="textAppearanceSmallInverse"/>
+
+    <attr format="reference" name="textAppearanceSubhead"/>
+    <attr format="reference" name="textAppearanceSubheadInverse"/>
+    <attr format="reference" name="textAppearanceTitle"/>
+    <attr format="reference" name="textAppearanceTitleInverse"/>
+  </declare-styleable>
+  <attr name="MColorPrimary" format="reference"/>
+  <attr name="MColorSecondary" format="reference"/>
+  <attr name="MColorTertiary" format="reference"/>
+  <attr name="MTitleCenter" format="boolean"/>
+  <attr name="MButtonBackground" format="reference"/>
+  <attr name="MButtonInverseBackground" format="reference"/>
+
+  <declare-styleable name="CustomView">
+    <attr format="color" name="startColor"/>
+    <attr format="color" name="middleColor"/>
+    <attr format="color" name="endColor"/>
+  </declare-styleable>
+
+  <declare-styleable name="WaveformView">
+    <attr name="dataThickness" format="dimension" />
+    <attr name="grid1Thickness" format="dimension" />
+    <attr name="grid2Thickness" format="dimension" />
+    <attr name="gridColor" format="color" />
+  </declare-styleable>
+
+  <declare-styleable name="MeasureResultBar">
+    <attr name="barColors" format="reference" />
+    <attr name="barTitles" format="reference" />
+    <attr name="axisXLabels" format="reference" />
+  </declare-styleable>
+
+</resources>

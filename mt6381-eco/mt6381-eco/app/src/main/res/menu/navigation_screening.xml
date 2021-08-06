@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <item
+      android:id="@+id/navigation_notifications"
+      android:icon="@drawable/icon_screening_history"
+      android:orderInCategory="0"
+      android:title="@string/recent_history"/>
+
+  <item
+      android:id="@+id/navigation_dashboard"
+      android:icon="@drawable/icon_screening_education"
+      android:orderInCategory="1"
+      android:title="@string/health_education"/>
+
+</menu>
